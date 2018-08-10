@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Ancestral Hatred",
+    "level": 1,
+    "traits": [
+      "Dwarf"
+    ],
+    "text": "You have shaped your hatred of ancestral dwarven foes into a powerful weapon. Choose two of the following creature traits: derro, duergar, giant, or orc. You gain a +1 circumstance bonus to damage rolls against creatures with one of the chosen traits. If a creature with a chosen trait critically succeeds at an attack against you, this bonus increases to +4 against that creature for 1 minute.",
+    "special": "Your GM can add appropriate creature traits to this list if your character is from a community that commonly fights other types of enemies."
+  },
+  {
+    "name": "Ancient's Blood",
+    "level": 1,
+    "traits": [
+      "Dwarf",
+      "Heritage"
+    ],
+    "trigger": "You attempt a saving throw against a magical effect.",
+    "text": "Your ancestors' innate resistance to magic has manifested in you. You gain a +2 circumstance bonus to the triggering saving throw.",
+    "special": "Your resistance hampers your connection to magic items. Reduce your total Resonance Points by 2 (minimum 0).",
+    "action": "Reaction"
+  },
+  {
+    "name": "Boulder Roll",
+    "level": 1,
+    "traits": [
+      "Dwarf"
+    ],
+    "prerequisites": "Mountain Roots",
+    "text": "Your dwarven build allows you to push foes around. Take a Step into the square of a foe that is your size or smaller, and the foe must move into empty space directly behind it. The foe must move even if doing so places it in harm's way. The foe can attempt to block your Step by rolling a Fortitude saving throw against your Athletics DC. If the foe attempts this saving throw, regardless of the saving throw's result, the creature takes bludgeoning damage equal to your level plus your Strength modifier. \n If the foe can't move into an empty space (if it is surrounded by solid objects or other creatures, for example), your Boulder Roll has no effect.",
+    "actions": [
+      "Action",
+      "Action"
+    ]
+  },
+  {
+    "name": "Giant Bane",
+    "level": 1,
+    "traits": [
+      "Dwarf"
+    ],
+    "text": "Your squat stature and your hatred for giantkind give you an edge when fighting them. You gain a +1 circumstance bonus to your Armor Class against giants; Fortitude and Reflex DCs against giants' attempts to Disarm, Grapply, Shove, or Trip you; Survival checks to track giants; Perception checks to notice giants; and Stealth checks to avoid being noticed by giants."
+  },
+  {
+    "name": "Attentive",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "text": "Your communal lifestyle causes you to notice when those around you act out of character. You gain a +2 circumstance bonus to Perception checks when using the Seek action to notice enchanted or possessed characters. \n If you aren't Seeking, the GM rolls a secret check anyway, with a -2 circumstance penalty, for you to notice the enchantment or possession."
+  },
+  {
+    "name": "Distracting Shadows",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "text": "You've learned to use larger folk to avoid drawing attention to yourself. You can use creatures that are at least one size larger than you (usually Medium or larger) as cover for the Hide and Sneak actions."
+  },
+  {
+    "name": "Keen Eyes",
+    "level": 1,
+    "traits": [
+      "Halfling",
+      "Heritage"
+    ],
+    "text": "Your eyes are sharp, and your other senses are similarly attuned to your surroundings. When you attack an opponent that is concealed from you or sensed by you, reduce the flat check DC you need to hit that creature to 3 for concealed or 9 for sensed. You gain a +2 circumstance bonus when using the Seek action to sense unseen creatures within 30 feet."
+  },
+  {
+    "name": "Lucky Halfling",
+    "level": 1,
+    "traits": [
+      "Fortune",
+      "Heritage"
+    ],
+    "frequency": "once per day",
+    "trigger": "You fail a skill check or saving throw.",
+    "text": "Your happy-go-lucky nature makes it seem like misfortune avoids you, and to an extent, that's true. You can reroll the triggering check or saving throw and take the better of the two results.",
+    "action": "Reaction"
+  },
+  {
+    "name": "Plucky",
+    "level": 1,
+    "traits": ["Halfling"],
+    "text": "You are easily able to ward off attempts to play on your fears and emotions. If you succeed at a saving throw against an emotion or fear effect, treat your result as a critical success instead of a success."
+  },
+  {
+    "name": "Sure-Footed",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "text": "If you succeed at an Acrobatics check to Balance or an Athletics check to Climb, you get a critical success instead of a success. You're not flat-footed when you attempt to Balance or Climb."
+  },
+  {
+    "name": "Titan Slinger",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "text": "You have learned how to use your sling to fell big creatures. You gain a +1 circumstance bonus to damage rolls with sling against Large or larger creatures. This bonus increases to +2 on critical hits (and then doubles on a critical hit as normal)."
+  },
+  {
+    "name": "Unfettered",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "trigger": "You roll an Acrobatics check to Escape, an Athletics check to Break a Grapple, or a saving throw against an effect that would entangle or grab you, or you use your Fortitude DC to resist a Grapple.",
+    "text": "You were forced into service as a laborer, either pressed into indenture or shackled by the evils of slavery, but you've since escaped and have trained to ensure you'll never labor against your will again. You gain a +2 circumstance bonus to the triggering check or your Fortitude DC.",
+    "action": "Reaction"
+  },
+  {
+    "name": "Weapon Familiarity (Halfling)",
+    "level": 1,
+    "traits": [
+      "Halfling"
+    ],
+    "text": "You favor traditional halfling weapons. You are trained with slings, sling staves, and shortswords. \n In addition, you gain access to all uncommon halfling weapons. For the purpose of proficiencies, you treat martial halfling weapons as simple weapons and exotic halfling weapons as martial weapons."
+  },
+  {
+    "name": "Weapon Trickster (Halfling)",
+    "level": 5,
+    "traits": [
+      "Halfling"
+    ],
+    "prerequisites": "Weapon Familiarity (Halfling)",
+    "text": "You are particularly adept at fighting with your people's favored weapons. Whenever you critically succeed at an attack roll using a weapon of the sling group, a shortsword, or a halfling weapon, you apply the weapon's critical specialization effect."
+  }
+]

@@ -1,0 +1,128 @@
+[
+    {
+      "name": "Dwarf",
+      "boosts": [
+        "Constitution",
+        "Wisdom",
+        "Free"
+      ],
+      "flaws": [
+        "Charisma"
+      ],
+      "hitpoints": 10,
+      "size": "Medium",
+      "speed": 20,
+      "languages": [
+        "Common",
+        "Dwarf"
+      ],
+      "bonus_languages": [
+        "Giant",
+        "Gnome",
+        "Goblin",
+        "Orc",
+        "Terran",
+        "Undercommon"
+      ],
+      "traits": [
+        "Dwarf",
+        "Humanoid"
+      ],
+      "senses": [
+        "Darkvision"
+      ],
+      "special": [
+        {"Unburdened": "If your Speed would be reduced by armor you wear or the encumbered condition, you ignore 5 feet of that reduction."}
+      ],
+      "backgrounds": [
+        "acolyte",
+        "nomad",
+        "warrior",
+        "barkeep",
+        "blacksmith",
+        "farmhand",
+        "merchant"
+      ]
+    },
+    {
+      "name": "Elf",
+      "boosts": [
+        "Dexterity",
+        "Intelligence",
+        "Free"
+      ],
+      "flaws": [
+        "Constitution"
+      ]
+    },
+    {
+      "name": "Gnome",
+      "boosts": [
+        "Constitution",
+        "Charisma",
+        "Free"
+      ],
+      "flaws": [
+        "Strength"
+      ]
+    },
+    {
+      "name": "Goblin",
+      "boosts": [
+        "Dexterity",
+        "Charisma",
+        "Free"
+      ],
+      "flaws": [
+        "Wisdom"
+      ]
+    },
+    {
+      "name": "Halfling",
+      "boosts": [
+        "Dexterity",
+        "Wisdom",
+        "Free"
+      ],
+      "flaws": [
+        "Strength"
+      ],
+      "hitpoints": 6,
+      "size": "Small",
+      "speed": 25,
+      "languages": [
+        "Common",
+        "Halfling"
+      ],
+      "bonus_languages": [
+        "Dwarven",
+        "Elven",
+        "Gnomish",
+        "Goblin"
+      ],
+      "traits": [
+        "Halfling",
+        "Humanoid"
+      ],
+      "senses": [
+        "Darkvision"
+      ],
+      "backgrounds": [
+        "acrobat",
+        "entertainer",
+        "street urchin",
+        "barkeep",
+        "criminal",
+        "laborer"
+      ]
+    },
+    {
+      "name": "Human",
+      "boosts": [
+        "Free",
+        "Free"
+      ],
+      "flaws": [
+      ]
+    }
+  ]
