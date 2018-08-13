@@ -18,7 +18,7 @@
     "trigger": "You attempt a saving throw against a magical effect.",
     "text": "Your ancestors' innate resistance to magic has manifested in you. You gain a +2 circumstance bonus to the triggering saving throw.",
     "special": "Your resistance hampers your connection to magic items. Reduce your total Resonance Points by 2 (minimum 0).",
-    "action": "Reaction"
+    "actions": ["Reaction"]
   },
   {
     "name": "Boulder Roll",
@@ -76,7 +76,7 @@
     "frequency": "once per day",
     "trigger": "You fail a skill check or saving throw.",
     "text": "Your happy-go-lucky nature makes it seem like misfortune avoids you, and to an extent, that's true. You can reroll the triggering check or saving throw and take the better of the two results.",
-    "action": "Reaction"
+    "actions": ["Reaction"]
   },
   {
     "name": "Plucky",
@@ -108,7 +108,7 @@
     ],
     "trigger": "You roll an Acrobatics check to Escape, an Athletics check to Break a Grapple, or a saving throw against an effect that would entangle or grab you, or you use your Fortitude DC to resist a Grapple.",
     "text": "You were forced into service as a laborer, either pressed into indenture or shackled by the evils of slavery, but you've since escaped and have trained to ensure you'll never labor against your will again. You gain a +2 circumstance bonus to the triggering check or your Fortitude DC.",
-    "action": "Reaction"
+    "actions": ["Reaction"]
   },
   {
     "name": "Weapon Familiarity (Halfling)",

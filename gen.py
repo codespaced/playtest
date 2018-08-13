@@ -1,35 +1,75 @@
+import random
 from character import Character
-from klass import Klass
-from ancestry import Ancestry
-from background import Background
-
-import json
-
-
-def load_json(file_name, klass):
-    with open(file_name) as f:
-        data = json.load(f)
-    things = []
-    for item in data:
-        things.append(klass(**item))
-    return things
-
-ancestries = load_json("data/ancestries.json", Ancestry)
-backgrounds = load_json("data/backgrounds.json", Background)
-#ancestry_feats = load_json("data/ancestry_feats.json", Ancestry_feat)
-classes = load_json("data/classes.json", Klass)
-
+from alignment import alignment
+from ability_score import Abilities
+from boost import Boost
+import data
 
 c = Character(name="Bob",
-    ancestry=ancestries[0],
-    background=backgrounds[0],
-    klass=classes[0])
+    ancestry=data.ancestries[0],
+    background=data.backgrounds[0],
+    klass=data.classes[0],
+    level=2)
+c.set_boosts()
 print(c)
 print("ancestry:", c.ancestry)
-c.languages = "Undercommon, Gnollish"
-print("languages:", c.languages)
+
+# assign random boosts for unselected free boosts
+for source in Boost.sources:
+    free_boosts = c.get_free(source, c.level)
+    for boost in free_boosts:
+        available = c.get_available(source, c.level)
+        boost.ability = random.choice(available)
+
+c.print_ability_scores()
+
 print("size:", c.size)
-print("hp:", c.hitpoints)
 print("background:", c.background)
-print("class:", c.klass)
-print(dir(c.ancestry))
+
+# assign random alignment
+c.alignment = random.choice(list(alignment))
+print("alignment:", c.alignment)
+
+#deity
+#age
+#gender
+c.languages = [c.ancestry.bonus_languages[0], c.ancestry.bonus_languages[1], ]
+print("languages:", c.languages)
+print("speed:", c.speed)
+print("level:", c.level)
+print("class dc:", c.class_dc)
+#hero points
+print("hp:", c.hit_points)
+c.level = 5
+print("level:", c.level)
+print("class dc:", c.class_dc)
+print("hp:", c.hit_points)
+
+#senses
+#perception
+#wisdom
+#teml
+#saves
+#fortitude
+#reflex
+#will
+#ac
+#ability scores
+#str
+#dex
+#con
+#int
+#wis
+#cha
+#weapon proficiencies
+#armor proficiencies
+#light
+#medium
+#heavy
+#shields
+#melee strikes
+#ranged strikes
+#skills
+#actions and activities
+#reactions and free actions
+

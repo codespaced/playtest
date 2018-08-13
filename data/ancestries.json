@@ -2,14 +2,14 @@
     {
       "name": "Dwarf",
       "boosts": [
-        "Constitution",
-        "Wisdom",
+        "constitution",
+        "wisdom",
         "Free"
       ],
       "flaws": [
-        "Charisma"
+        "charisma"
       ],
-      "hitpoints": 10,
+      "hit_points": 10,
       "size": "Medium",
       "speed": 20,
       "languages": [
@@ -47,47 +47,47 @@
     {
       "name": "Elf",
       "boosts": [
-        "Dexterity",
-        "Intelligence",
+        "dexterity",
+        "intelligence",
         "Free"
       ],
       "flaws": [
-        "Constitution"
+        "constitution"
       ]
     },
     {
       "name": "Gnome",
       "boosts": [
-        "Constitution",
-        "Charisma",
+        "constitution",
+        "charisma",
         "Free"
       ],
       "flaws": [
-        "Strength"
+        "strength"
       ]
     },
     {
       "name": "Goblin",
       "boosts": [
-        "Dexterity",
-        "Charisma",
+        "dexterity",
+        "charisma",
         "Free"
       ],
       "flaws": [
-        "Wisdom"
+        "wisdom"
       ]
     },
     {
       "name": "Halfling",
       "boosts": [
-        "Dexterity",
-        "Wisdom",
+        "dexterity",
+        "wisdom",
         "Free"
       ],
       "flaws": [
-        "Strength"
+        "strength"
       ],
-      "hitpoints": 6,
+      "hit_points": 6,
       "size": "Small",
       "speed": 25,
       "languages": [

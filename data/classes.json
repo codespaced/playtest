@@ -1,17 +1,17 @@
 [
   {
     "name": "Alchemist",
-    "Key Ability Score": [
-      "Intelligence"
+    "key_ability_score": [
+      "intelligence"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Dexterity"
+    "secondary_ability_scores": [
+      "constitution",
+      "dexterity"
     ],
-    "hit points": 8,
+    "hit_points": 8,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "expert",
         "will": "trained"
@@ -27,7 +27,7 @@
         "light"
       ]
     },
-    "signature skills": [
+    "signature_skills": [
       "Arcana",
       "Crafting",
       "Medicine"
@@ -35,41 +35,41 @@
   },
   {
     "name": "Barbarian",
-    "Key Ability Score": [
-      "Strength"
+    "key_ability_score": [
+      "strength"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Dexterity"
+    "secondary_ability_scores": [
+      "constitution",
+      "dexterity"
     ],
-    "Hit Points": 12,
-    "Proficiencies": {
-      "Perception": "Expert",
+    "hit_points": 12,
+    "proficiencies": {
+      "perception": "Expert",
       "Saving Throws": {
-        "Fortitude": "Expert",
-        "Reflex": "trained",
+        "fortitude": "Expert",
+        "reflex": "trained",
         "will": "Expert"
       },
-      "Skills": 3,
-      "Weapons": {
-        "Trained": [
+      "skills": 3,
+      "weapons": {
+        "trained": [
           "simple",
           "martial"
         ]
       },
-      "Armor": {
-        "Trained": [
+      "armor": {
+        "trained": [
           "light",
           "medium"
         ]
       }
     },
-    "Signature Skills": [
+    "signature_skills": [
       "Acrobatics",
       "Athletics",
       "Intimidation"
     ],
-    "class feats": [
+    "class_feats": [
       {
         "name": "Acute Vision",
         "level": 1,
@@ -99,7 +99,7 @@
       {
         "name": "Sudden Charge",
         "level": 1,
-        "Requirements": [
+        "requirements": [
           "You are not wearing heavy armor."
         ],
         "text": "With a quick sprint, you dash up to your foe and swing. Stride up to double your Speed. If you end the move within melee reach of at least one enemy, you can make a melee Strike against that enemy. You can use Sudden Charge while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.",
@@ -110,7 +110,7 @@
       {
         "name": "Acute Scent",
         "level": 2,
-        "Prerequisites": [
+        "prerequisites": [
           "darkvision",
           "low-light vision"
         ],
@@ -127,7 +127,7 @@
       {
         "name": "No Escape",
         "level": 2,
-        "Trigger": "An adjacent foe attempts to move away from you using an action that has the move trait.",
+        "trigger": "An adjacent foe attempts to move away from you using an action that has the move trait.",
         "text": "Stride up to your Speed in tandem with the foe, following the foe's path and remaining adjacent to the foe throughout its movement until the foe stops moving or you are out of movement.",
         "traits": [
           "barbarian",
@@ -147,7 +147,7 @@
       {
         "name": "Fast Movement",
         "level": 4,
-        "Requirements": "You aren't wearing heavy armor.",
+        "requirements": "You aren't wearing heavy armor.",
         "text": "While you are raging, you are accelerated 10 (see page 320).",
         "traits": [
           "barbarian"
@@ -156,8 +156,8 @@
       {
         "name": "Raging Athlete",
         "level": 4,
-        "Prerequisites": "expert in Athletics",
-        "Requirements": "You are not wearing heavy armor.",
+        "prerequisites": "expert in Athletics",
+        "requirements": "You are not wearing heavy armor.",
         "text": "While you are raging, you gain a climb Speed and swim Speed equal to your land Speed.",
         "traits": [
           "barbarian"
@@ -175,8 +175,8 @@
       {
         "name": "Animal Skin",
         "level": 6,
-        "Prerequisites": "animal totem",
-        "Requirements": "You are not wearing any physical armor, though you can be benefiting from mage armor or bracers of armor.",
+        "prerequisites": "animal totem",
+        "requirements": "You are not wearing any physical armor, though you can be benefiting from mage armor or bracers of armor.",
         "text": "When you Rage, your skin transforms into a thick hide resembling the skin of your totem animal. As long as you meet the requirement, while raging you gain a +1 conditional bonus to Ac instead of taking a –1 penalty to Ac. The thickness of your hide gives you a Dexterity modifier cap of +4.",
         "traits": [
           "barbarian",
@@ -189,7 +189,7 @@
       {
         "name": "Cleave",
         "level": 6,
-        "Trigger": "Your melee Strike kills or knocks a creature unconscious, and another foe is adjacent to them.",
+        "trigger": "Your melee Strike kills or knocks a creature unconscious, and another foe is adjacent to them.",
         "text": "Make a melee Strike against the second foe. If you somehow Cleave without taking a multiple attack penalty, take a –2 penalty to your attack roll instead.",
         "traits": [
           "barbarian",
@@ -199,13 +199,13 @@
       {
         "name": "Dragon Totem Breath",
         "level": 6,
-        "Prerequisites": "dragon totem",
-        "Frequency": "once per hour",
+        "prerequisites": "dragon totem",
+        "frequency": "once per hour",
         "text": "You breathe in deeply and then exhale powerful energy in either a 30-foot cone or a 60-foot line, dealing 1d6 damage per barbarian level. Each creature in the area must attempt a Reflex save.",
-        "save result": {
-          "Success": "That target takes half damage.",
+        "save_result": {
+          "success": "That target takes half damage.",
           "Critical Success": "The target is unaffected.",
-          "Failure": "The target takes full damage.",
+          "failure": "The target takes full damage.",
           "Critical Failure": "The target takes double damage."
         },
         "note": "Your breath's area (line or cone) and damage type match your chosen dragon. This ability counts as a spell of half your level rounded up.",
@@ -221,68 +221,68 @@
       {
         "name": "Giant's Stature",
         "level": 6,
-        "Prerequisites": "giant totem",
-        "Requirements": "You are Medium or smaller.",
+        "prerequisites": "giant totem",
+        "requirements": "You are Medium or smaller.",
         "text": "You grow to incredible size. You become Large and increase your reach by 5 feet until you stop raging. You have the sluggish 1 condition (see page 324) while your size is increased.",
         "notes": "Your equipment grows with you. If you're using the titan mauler ability, your weapon's even larger size causes it to have the same effects as normal for that ability."
       },
       {
         "name": "Spirits' Interference",
         "level": 6,
-        "Prerequisites": "spirit totem",
+        "prerequisites": "spirit totem",
         "text": "You call forth protective spirits to ward off ranged attacks. While you are raging, anyone making a ranged attack against you must succeed at a DC 5 flat check, or the attack misses with no effect."
       },
       {
         "name": "Witch Hunter",
         "level": 6,
-        "Prerequisites": "superstition totem",
-        "Trigger": "A creature within your reach performs a spellcasting action.",
+        "prerequisites": "superstition totem",
+        "trigger": "A creature within your reach performs a spellcasting action.",
         "text": "Make a melee Strike against the triggering creature at a –2 penalty. If the attack hits, you disrupt that action. This Strike does not take or count toward your multiple attack penalty.,"
       },
       {
         "name": "Animal Rage",
         "level": 8,
-        "Prerequisites": "animal totem",
-        "text": "When you Rage, you transform into a Medium form of your totem animal, gaining the animal trait in addition to your normal traits. All your gear is absorbed into your form; all constant abilities of your gear still function, but you can't activate any item abilities. When you transform, you gain the following: • Ignore your armor's check penalty and Speed reduction. • You gain the same number of temporary Hit Points that you normally gain when you are raging. • You gain low-light vision.",
+        "prerequisites": "animal totem",
+        "text": "When you Rage, you transform into a Medium form of your totem animal, gaining the animal trait in addition to your normal traits. All your gear is absorbed into your form; all constant abilities of your gear still function, but you can't activate any item abilities. When you transform, you gain the following: • Ignore your armor's check penalty and Speed reduction. • You gain the same number of temporary hitpoints that you normally gain when you are raging. • You gain low-light vision.",
         "text2": "Your animal form prevents you from casting spells, speaking, and taking most actions with the manipulate trait that require your hands. (The Gm determines which manipulate actions you can use if there's doubt.) You can dismiss this effect by spending an action (this action has the rage and concentrate traits). While in animal form, you gain the attacks, movement types, and special abilities listed for your chosen animal, and you retain the attack or attacks from bestial rage (see Table 3–3: Animal Totems on page 55). You choose the specific type of animal you turn into within the broader category (such as a lion or snow leopard for cat). This has no effect on your animal form's size or statistics.",
         "bonuses": {
-          "Ape": [
+          "ape": [
             "Speed of 25 feet",
             "climb Speed of 20 feet",
             "scent"
           ],
-          "Bear": [
+          "bear": [
             "Speed of 25 feet",
             "scent"
           ],
-          "Bull": [
+          "bull": [
             "Speed of 30 feet",
             "scent"
           ],
-          "Cat": "Speed of 40 feet; scent.",
-          "Deer": "Speed of 45 feet; scent.",
-          "Frog": "tongue (reach 15 feet), Damage 1d4 bludgeoning; Speed of 25 feet, swim Speed of 25 feet; scent.",
-          "Shark": "swim Speed of 35 feet; scent.",
-          "Snake": "Speed of 20 feet, climb Speed of 20 feet, swim Speed of 20 feet; scent.",
-          "Wolf": "Speed of 40 feet; scent."
+          "cat": "Speed of 40 feet; scent.",
+          "deer": "Speed of 45 feet; scent.",
+          "frog": "tongue (reach 15 feet), Damage 1d4 bludgeoning; Speed of 25 feet, swim Speed of 25 feet; scent.",
+          "shark": "swim Speed of 35 feet; scent.",
+          "snake": "Speed of 20 feet, climb Speed of 20 feet, swim Speed of 20 feet; scent.",
+          "wolf": "Speed of 40 feet; scent."
         }
       },
       {
         "name": "Renewed Vigor",
         "level": 8,
-        "text": "You pause to recover some of your raging vigor. You gain temporary Hit Points equal to half your level plus your Constitution modifier."
+        "text": "You pause to recover some of your raging vigor. You gain temporary hitpoints equal to half your level plus your Constitution modifier."
       },
       {
         "name": "Sudden Leap",
         "level": 8,
-        "Prerequisites": "Sudden Charge",
-        "Requirements": "You are not wearing heavy armor.",
+        "prerequisites": "Sudden Charge",
+        "requirements": "You are not wearing heavy armor.",
         "text": "When making a Sudden Charge, instead of Striding, you can Leap. If you succeed at an Athletics check when you make the Leap, you can move the same distance you could with a Long Jump. Even if you're Leaping vertically, you determine the DC for the height you're jumping using the DC of a Long Jump. After your Strike, you fall to the ground if you're in the air. If the distance of your fall is no more than the height of your jump, you take no damage and land upright."
       },
       {
         "name": "Come And Get Me",
         "level": 10,
-        "text": "You open yourself to attacks while preparing devastating counterattacks. While you are raging, you are flatfooted, and damage rolls against you gain a +2 circumstance bonus. If a creature hits you, that creature is flat-footed against the next attack you make against it before the end of your next turn. If you hit it before the end of your next turn, you gain temporary Hit Points equal to your Constitution modifier."
+        "text": "You open yourself to attacks while preparing devastating counterattacks. While you are raging, you are flatfooted, and damage rolls against you gain a +2 circumstance bonus. If a creature hits you, that creature is flat-footed against the next attack you make against it before the end of your next turn. If you hit it before the end of your next turn, you gain temporary hitpoints equal to your Constitution modifier."
       },
       {
         "name": "Furious Sprint",
@@ -292,58 +292,58 @@
       {
         "name": "Great Cleave",
         "level": 10,
-        "Prerequisites": "Cleave",
+        "prerequisites": "Cleave",
         "text": "When you Cleave, if your Strike also kills the target or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock unconscious a creature or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first."
       },
       {
         "name": "Knockback",
         "level": 10,
-        "Trigger": "You use this action immediately after you successfully Strike a foe.",
+        "trigger": "You use this action immediately after you successfully Strike a foe.",
         "text": "You push the foe back 5 feet, as if you had succeeded at an Athletics check to Shove the foe."
       },
       {
         "name": "Terrifying Howl",
         "level": 10,
-        "Prerequisites": "Intimidating Glare",
+        "prerequisites": "Intimidating Glare",
         "text": "You unleash a terrifying howl. All frightened creatures within 30 feet must succeed at a Will save against your Intimidation DC. Regardless of the result of its saving throw, the creature is bolstered (see page 319) against your Terrifying Howl.",
         "saves": {
-          "Success": "The target is unaffected.",
-          "Failure": "The target gains the fleeing condition for 1 round as long as it remains frightened.",
+          "success": "The target is unaffected.",
+          "failure": "The target gains the fleeing condition for 1 round as long as it remains frightened.",
           "Critical Failure": "The gains the fleeing condition as long as it remains frightened."
         }
       },
       {
         "name": "Dragon Totem Wings",
         "level": 12,
-        "Prerequisites": "dragon totem",
+        "prerequisites": "dragon totem",
         "text": "You sprout dragon wings from your back that are the same color as your chosen dragon. While you are raging, you gain a fly Speed of 40 feet."
       },
       {
         "name": "Predator's Pounce",
         "level": 12,
-        "Prerequisites": "animal totem",
-        "Requirements": "You are not wearing heavy armor.",
+        "prerequisites": "animal totem",
+        "requirements": "You are not wearing heavy armor.",
         "text": "You close the distance to your prey in a blur, pouncing on them before they can react to your sudden appearance. You Stride up to your Speed and make a Strike at the end of your movement. If you were unseen or sensed before you began the action, you remain unseen or sensed until after you Strike."
       },
       {
         "name": "Spell Sunder",
         "level": 12,
-        "Prerequisites": "superstition totem",
+        "prerequisites": "superstition totem",
         "text": "You draw upon your superstitious fury to destroy a spell. Make a Strike with a melee weapon or an unarmed attack against a creature, object, or a spell manifestation (such as the wall created by wall of fire). Whether or not you succeed at your Strike, the target is bolstered to your Spell Sunder.",
         "saves": {
-          "Success": "You attempt to counteract a single spell active on the target. The counteract attempt uses a level equal to half your barbarian level rounded up, if your counteract attempt would require a check, your result is the same as the result of your attack roll, with any necessary adjustments for the difference in counteract level."
+          "success": "You attempt to counteract a single spell active on the target. The counteract attempt uses a level equal to half your barbarian level rounded up, if your counteract attempt would require a check, your result is the same as the result of your attack roll, with any necessary adjustments for the difference in counteract level."
         }
       },
       {
         "name": "Spirit's Wrath",
         "level": 12,
-        "Prerequisites": "spirit totem",
+        "prerequisites": "spirit totem",
         "text": "You call forth an ephemeral apparition, typically a ghost of an ancestor or nature spirit, which takes the form of a wisp. The spirit wisp makes a melee slam unarmed Strike against an enemy within 25 feet of you. The wisp uses your attack modifier and deals damage equal to 4d8 plus your Constitution modifier. The damage is your choice of negative or positive damage; don't apply your circumstance or conditional bonuses to the attack or damage. If your wisp critically hits with this Strike, the target gains the frightened 1 condition. This attack takes and counts toward your multiple attack penalty as if you were the one attacking."
       },
       {
         "name": "Titan's Stature",
         "level": 12,
-        "Prerequisites": [
+        "prerequisites": [
           "giant totem",
           "Giant's Stature"
         ],
@@ -352,7 +352,7 @@
       {
         "name": "Awesome Blow",
         "level": 14,
-        "Prerequisites": "Knockback",
+        "prerequisites": "Knockback",
         "text": "Your attacks are so powerful that they can flatten your opponents. When you use Knockback, you can attempt an Athletics check against your target's Fortitude DC.",
         "saves": {
           "Success": "You gain the success effect of a Shove followed by the success effect of a Trip against the target.",
@@ -363,13 +363,13 @@
       {
         "name": "Giant's Lunge",
         "level": 14,
-        "Prerequisites": "giant totem",
+        "prerequisites": "giant totem",
         "text": "You extend your body and prepare to attack foes outside your normal reach. While you are raging, you have reach 10 feet on all your melee attacks. This doesn't increase the reach of any weapon or unarmed Strike that already has reach."
       },
       {
         "name": "Sunder Enchantment",
         "level": 14,
-        "Prerequisites": [
+        "prerequisites": [
           "superstition totem",
           "Spell Sunder"
         ],
@@ -378,7 +378,7 @@
       {
         "name": "Vengeful Strike",
         "level": 14,
-        "Prerequisites": "Come and Get Me",
+        "prerequisites": "Come and Get Me",
         "Requirements": "You're under the effect of Come and Get Me.",
         "Trigger": "A creature within your reach succeeds or critically succeeds at an attack against you.",
         "text": "When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature at a –2 penalty. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this strike."
@@ -386,11 +386,11 @@
       {
         "name": "Dragon Transformation",
         "level": 16,
-        "Prerequisites": [
+        "prerequisites": [
           "dragon totem",
           "Dragon Totem Wings"
         ],
-        "text": "You transform into a Large form of a dragon that matches the dragon type of your dragon totem until you stop raging, gaining the dragon trait in addition to your normal traits while in this form. You must have enough space to expand into, or your transformation fails. All your gear is absorbed into your form; the constant abilities of your gear still function,but you can't activate any item abilities. When you transform, you gain the following. • Ignore your armor's check penalty and Speed reduction, if any. • One or more melee unarmed Strikes depending on your dragon form (see page 218), which are the only type of attacks you can use. You're trained with them. When attacking with them, your damage bonus is +6. These are Strength-based attacks (for the purposes of the enfeebled condition, for example).  • Temporary Hit Points equal to the amount you gain when you are raging. • Resistance 10 against the damage type of your breath weapon. • Blindsense 60 feet, darkvision.  • Speed 40 feet and fly Speed 100 feet. • A breath weapon you can activate by spending 2 actions. A creature that succeeds at a DC 24 saving throw takes half damage, no damage on a critical success, and double damage on a critical failure. The saving throw is a Reflex save unless stated otherwise in the special ability description. Once you activate your breath weapon, you can't use it again for 1d4 rounds. Your breath weapon is an arcane evocation effect with the appropriate damage trait.",
+        "text": "You transform into a Large form of a dragon that matches the dragon type of your dragon totem until you stop raging, gaining the dragon trait in addition to your normal traits while in this form. You must have enough space to expand into, or your transformation fails. All your gear is absorbed into your form; the constant abilities of your gear still function,but you can't activate any item abilities. When you transform, you gain the following. • Ignore your armor's check penalty and Speed reduction, if any. • One or more melee unarmed Strikes depending on your dragon form (see page 218), which are the only type of attacks you can use. You're trained with them. When attacking with them, your damage bonus is +6. These are Strength-based attacks (for the purposes of the enfeebled condition, for example).  • Temporary hitpoints equal to the amount you gain when you are raging. • Resistance 10 against the damage type of your breath weapon. • Blindsense 60 feet, darkvision.  • Speed 40 feet and fly Speed 100 feet. • A breath weapon you can activate by spending 2 actions. A creature that succeeds at a DC 24 saving throw takes half damage, no damage on a critical success, and double damage on a critical failure. The saving throw is a Reflex save unless stated otherwise in the special ability description. Once you activate your breath weapon, you can't use it again for 1d4 rounds. Your breath weapon is an arcane evocation effect with the appropriate damage trait.",
         "text2": "The shape, damage, damage type, and saving throw type depend on your dragon form (see page 218). After you use your breath weapon, you still have to wait the full delay even if your transformation ends and you transform anew. The special statistics of your dragon form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses (such as those you gain while raging). Your dragon form prevents you from casting spells or taking most actions with the manipulate trait that require your hands. (The Gm determines which actions you can use if there's any doubt.) You can dismiss this effect by spending an action (this action has the rage and concentrate traits). You gain the benefits for your chosen dragon's type listed in the dragon form spell (see page 218). At 18th level, your fly Speed is accelerated 20, your damage bonus increases to +12, your breath weapon DC increases to 30, and you gain a +14 conditional bonus to breath weapon damage."
       },
       {
@@ -418,7 +418,7 @@
       {
         "name": "Contagious Rage",
         "level": 20,
-        "text": "You stoke an ally's fury. While you are raging, one willing creature within 30 feet gains the same damage bonus and Ac penalty that you do while you are raging. If the ally wasn't already raging, she gains the temporary Hit Points from your Rage action as well. The ally can still use actions with the concentrate trait, and she doesn't become fatigued when you stop raging."
+        "text": "You stoke an ally's fury. While you are raging, one willing creature within 30 feet gains the same damage bonus and Ac penalty that you do while you are raging. If the ally wasn't already raging, she gains the temporary hitpoints from your Rage action as well. The ally can still use actions with the concentrate trait, and she doesn't become fatigued when you stop raging."
       },
       {
         "name": "Quaking Stomp",
@@ -435,17 +435,17 @@
   },
   {
     "name": "Bard",
-    "Key Ability Score": [
-      "Charisma"
+    "key_ability_score": [
+      "charisma"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Dexterity"
+    "secondary_ability_scores": [
+      "constitution",
+      "dexterity"
     ],
-    "hit points": 8,
+    "hit_points": 8,
     "proficiencies": {
       "perception": "expert",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "trained",
         "reflex": "trained",
         "will": "expert"
@@ -470,7 +470,7 @@
       },
       "spells": "Occult"
     },
-    "signature skills": [
+    "signature_skills": [
       "Crafting",
       "Deception",
       "Diplomacy",
@@ -482,7 +482,7 @@
     "advancement": {
       "1": [
         {
-          "first composition": [
+          "first_composition": [
             "inspire courage",
             "counter performance"
           ],
@@ -496,7 +496,7 @@
                 "lingering composition",
                 "soothe"
               ],
-              "Polymath": [
+              "polymath": [
                 "versatile performance",
                 "summon monster"
               ]
@@ -510,10 +510,10 @@
       ],
       "3": [
         {
-          "spell level": 2
+          "spell_level": 2
         },
         {
-          "class feature": "spontaneous heightening"
+          "class_feature": "spontaneous heightening"
         },
         "general feat",
         "skill increase"
@@ -524,7 +524,7 @@
       ],
       "5": [
         {
-          "spell level": 2
+          "spell_level": 2
         },
         "ability boosts",
         "ancestry feat",
@@ -536,7 +536,7 @@
       ],
       "7": [
         {
-          "spell level": 4
+          "spell_level": 4
         },
         "general feat",
         "skill increase"
@@ -547,7 +547,7 @@
       ],
       "9": [
         {
-          "spell level": 5
+          "spell_level": 5
         },
         "ancestry feat",
         "skill increase"
@@ -559,7 +559,7 @@
       ],
       "11": [
         {
-          "spell level": 6
+          "spell_level": 6
         },
         "ancestry feat",
         "skill increase"
@@ -570,7 +570,7 @@
       ],
       "13": [
         {
-          "spell level": 7
+          "spell_level": 7
         },
         "ancestry feat",
         "skill increase"
@@ -581,7 +581,7 @@
       ],
       "15": [
         {
-          "spell level": 8
+          "spell_level": 8
         },
         "ability boosts",
         "general feat",
@@ -593,7 +593,7 @@
       ],
       "17": [
         {
-          "spell level": 9
+          "spell_level": 9
         },
         "ancestry feat",
         "skill increase"
@@ -604,7 +604,7 @@
       ],
       "19": [
         {
-          "spell level": 5
+          "spell_level": 5
         },
         "legendary spellcaster",
         "general feat",
@@ -616,7 +616,7 @@
         "skill feat"
       ]
     },
-    "class feats": [
+    "class_feats": [
       {"name": "Bardic Lore",
         "level": 1,
         "text": "Your eclectic studies inform you on just about any topic. You are trained in Bardic Lore, a special lore skill that can be used only to Recall Knowledge, but can be used to Recall Knowledge on any topic. If you are legendary in Occultism, you become an expert in Bardic Lore, but you can't increase your proficiency rank in Bardic Lore by any other means."},
@@ -631,19 +631,19 @@
       {
         "name": "Esoteric Scholar",
         "level": 2,
-        "Prerequisites": "Versatile Performance",
+        "prerequisites": "Versatile Performance",
         "text": "You keep a book of occult spells similar to a wizard's spellbook. You add all the spells in your repertoire to this book for free, and you can add additional occult spells to the book by paying the appropriate cost and using your Occultism skill, similarly to how a wizard can Learn Arcane Spells and add those spells to his spellbook. During your daily preparations, choose any one spell from your spellbook. If the spell you choose is already in your spell repertoire, you can heighten it with spontaneous heightening that day. If it isn't in your repertoire, treat it as though it were in it for that day."
       },
       {
         "name": "Inspire Competence",
         "level": 2,
-        "Prerequisites": "Lingering Composition",
+        "prerequisites": "Lingering Composition",
         "text": "You learn the inspire competence composition cantrip (see page 233), which magically aids your allies' skill checks."
       },
       {
         "name": "Loremaster's Recall",
         "level": 2,
-        "Prerequisites": "Bardic Lore",
+        "prerequisites": "Bardic Lore",
         "text": "You can magically unlock more memories, making it more likely you can remember something. You learn the loremaster's recall power (see page 236), which you can cast at a cost of 1 Spell Point. Increase your Spell Point pool by 1."
       },
       {
@@ -669,7 +669,7 @@
       {
         "name": "Harmonize",
         "level": 6,
-        "Prerequisites": "Lingering Composition",
+        "prerequisites": "Lingering Composition",
         "text": "Magical harmonies maintain your compositions. You learn the harmonize power (see page 229), which you can cast at a cost of 1 Spell Point. Increase your Spell Point pool by 1."
       },
       {
@@ -680,13 +680,13 @@
       {
         "name": "Eclectic Skill",
         "level": 8,
-        "Prerequisites": ["Versatile Performance", "Master Occultism"],
+        "prerequisites": ["Versatile Performance", "Master Occultism"],
         "text": "You can attempt any skill check that normally requires you to be trained, even if you are untrained. If you are legendary in Occultism, you can also attempt any skill check that normally requires you to be an expert, even if you are untrained or trained."
       },
       {
         "name": "Inspire Heroics",
         "level": 8,
-        "Prerequisites": "Lingering Composition",
+        "prerequisites": "Lingering Composition",
         "text": "You learn the inspire heroics power (see page 233), which you can cast at a cost of 1 Spell Point. Increase your Spell Point pool by 2."
       },
       {
@@ -698,7 +698,7 @@
       {
         "name": "Mental Prowess",
         "level": 8,
-        "Prerequisites": ["Expert in Will saves", "Bardic Lore"],
+        "prerequisites": ["Expert in Will saves", "Bardic Lore"],
         "text": "Your proficiency rank for Will saves increases to master. When you succeed at a Will save, treat it as a critical success instead."
       },
       {
@@ -709,7 +709,7 @@
       {
         "name": "Unusual Composition",
         "level": 10,
-        "Prerequisites": "Versatile Performance",
+        "prerequisites": "Versatile Performance",
         "Trigger": "You begin casting a composition spell that  has a maximum of 2 spellcasting actions.",
         "text": "You use a different kind of performance than usual for the composition in order to change any of its Somatic Casting actions to Verbal Casting actions or vice versa, and adding an additional spellcasting action of the appropriate type. As usual for composition spells, this changes whether the composition is auditory or visual."
       },
@@ -721,7 +721,7 @@
       {
         "name": "Mental Stronghold",
         "level": 14,
-        "Prerequisites": ["Master in Will saves", "Bardic Lore"],
+        "prerequisites": ["Master in Will saves", "Bardic Lore"],
         "text": "Your mind is a fortress. You become legendary at Will saves. When you critically fail a Will save, treat it as a failure instead, and when you fail a Will save against an effect that deals damage, halve the damage you take."
       },
       {
@@ -737,11 +737,11 @@
       {
         "name": "Symphony Of The Muse",
         "level": 20,
-        "Prerequisites": "Harmonize",
+        "prerequisites": "Harmonize",
         "text": "You are able to weave countless performances together into a solo symphony. You are no longer limited to a single composition each turn or a single composition at a time; when you use a new composition, all previous compositions' effects remain."
       }
     ],
-    "spell progression": [
+    "spell_progression": [
       "2",
       "3",
       "3, 2",
@@ -766,17 +766,17 @@
   },
   {
     "name": "Cleric",
-    "Key Ability Score": [
-      "Wisdom"
+    "key_ability_score": [
+      "wisdom"
     ],
-    "Secondary Ability Scores": [
-      "Charisma",
-      "Constitution"
+    "secondary_ability_scores": [
+      "charisma",
+      "constitution"
     ],
-    "hit points": 8,
+    "hit_points": 8,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "trained",
         "will": "expert"
@@ -797,7 +797,7 @@
       },
       "spells": "divine"
     },
-    "signature skills": [
+    "signature_skills": [
       "Diplomacy",
       "Medicine",
       "Performance",
@@ -807,17 +807,17 @@
   },
   {
     "name": "Druid",
-    "Key Ability Score": [
-      "Wisdom"
+    "key_ability_score": [
+      "wisdom"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Dexterity"
+    "secondary_ability_scores": [
+      "constitution",
+      "dexterity"
     ],
-    "hit points": 8,
+    "hit_points": 8,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "trained",
         "will": "expert"
@@ -838,7 +838,7 @@
       },
       "spells": "primal"
     },
-    "signature skills": [
+    "signature_skills": [
       "Crafting",
       "Nature",
       "Survival",
@@ -847,17 +847,17 @@
   },
   {
     "name": "Fighter",
-    "Key Ability Score": [
-      "Dexterity",
-      "Strength"
+    "key_ability_score": [
+      "dexterity",
+      "strength"
     ],
-    "Secondary Ability Scores": [
-      "Constitution"
+    "secondary_ability_scores": [
+      "constitution"
     ],
-    "hit points": 10,
+    "hit_points": 10,
     "proficiencies": {
       "perception": "expert",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "expert",
         "will": "trained"
@@ -878,7 +878,7 @@
         ]
       }
     },
-    "signature skills": [
+    "signature_skills": [
       "Acrobatics",
       "Athletics",
       "Crafting"
@@ -886,18 +886,18 @@
   },
   {
     "name": "Monk",
-    "Key Ability Score": [
-      "Dexterity",
-      "Strength"
+    "key_ability_score": [
+      "dexterity",
+      "strength"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Wisdom"
+    "secondary_ability_scores": [
+      "constitution",
+      "wisdom"
     ],
-    "hit points": 10,
+    "hit_points": 10,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "expert",
         "will": "expert"
@@ -917,7 +917,7 @@
         ]
       }
     },
-    "signature skills": [
+    "signature_skills": [
       "Acrobatics",
       "Athletics",
       "Religion"
@@ -925,17 +925,17 @@
   },
   {
     "name": "Paladin",
-    "Key Ability Score": [
-      "Strength"
+    "key_ability_score": [
+      "strength"
     ],
-    "Secondary Ability Scores": [
-      "Charisma",
-      "Constitution"
+    "secondary_ability_scores": [
+      "charisma",
+      "constitution"
     ],
-    "hit points": 10,
+    "hit_points": 10,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "trained",
         "will": "expert"
@@ -956,7 +956,7 @@
         ]
       }
     },
-    "signature skills": [
+    "signature_skills": [
       "Athletics",
       "Crafting",
       "Diplomacy",
@@ -965,18 +965,18 @@
   },
   {
     "name": "Ranger",
-    "Key Ability Score": [
-      "Dexterity",
-      "Strength"
+    "key_ability_score": [
+      "dexterity",
+      "strength"
     ],
-    "Secondary Ability Scores": [
-      "Constitution",
-      "Wisdom"
+    "secondary_ability_scores": [
+      "constitution",
+      "wisdom"
     ],
-    "hit points": 10,
+    "hit_points": 10,
     "proficiencies": {
       "perception": "expert",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "expert",
         "reflex": "expert",
         "will": "expert"
@@ -995,7 +995,7 @@
         ]
       }
     },
-    "signature skills": [
+    "signature_skills": [
       "Acrobatics",
       "Athletics",
       "Crafting",
@@ -1006,17 +1006,17 @@
   },
   {
     "name": "Rogue",
-    "Key Ability Score": [
-      "Dexterity"
+    "key_ability_score": [
+      "dexterity"
     ],
-    "Secondary Ability Scores": [
-      "Charisma",
-      "Constitution"
+    "secondary_ability_scores": [
+      "charisma",
+      "constitution"
     ],
-    "hit points": 8,
+    "hit_points": 8,
     "proficiencies": {
       "perception": "expert",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "trained",
         "reflex": "expert",
         "will": "expert"
@@ -1038,7 +1038,7 @@
         ]
       }
     },
-    "signature skills": [
+    "signature_skills": [
       "Acrobatics",
       "Athletics",
       "Crafting",
@@ -1053,17 +1053,17 @@
   },
   {
     "name": "Sorcerer",
-    "Key Ability Score": [
-      "Charisma"
+    "key_ability_score": [
+      "charisma"
     ],
-    "Secondary Ability Scores": [
-      "Dexterity",
-      "Constitution"
+    "secondary_ability_scores": [
+      "dexterity",
+      "constitution"
     ],
-    "hit points": 6,
+    "hit_points": 6,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "trained",
         "reflex": "trained",
         "will": "expert"
@@ -1084,24 +1084,24 @@
       },
       "spells": "bloodline"
     },
-    "signature skills": [
+    "signature_skills": [
       "Crafting",
       "Bloodline"
     ]
   },
   {
     "name": "Wizard",
-    "Key Ability Score": [
-      "Intelligence"
+    "key_ability_score": [
+      "intelligence"
     ],
-    "Secondary Ability Scores": [
-      "Dexterity",
-      "Constitution"
+    "secondary_ability_scores": [
+      "dexterity",
+      "constitution"
     ],
-    "hit points": 6,
+    "hit_points": 6,
     "proficiencies": {
       "perception": "trained",
-      "saving throws": {
+      "saving_throws": {
         "fortitude": "trained",
         "reflex": "trained",
         "will": "expert"
@@ -1126,7 +1126,7 @@
       },
       "spells": "arcane"
     },
-    "signature skills": [
+    "signature_skills": [
       "Arcana",
       "Crafting"
     ]
