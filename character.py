@@ -3,7 +3,6 @@ from klass import Klass
 from ancestry import Ancestry
 from background import Background
 from ancestry_feat import Ancestry_feat
-#from ability_score import Ability_score
 from ability_score import Abilities
 from boost import Boost
 
@@ -65,13 +64,7 @@ class Character:
         self.experience = 0
         self.senses = {"Perception": self.skills["Perception"]}
         self.hero_points = 0
-        self.bonuses = {
-            "ancestry": [],
-            "background": [],
-            "class": [],
-            "free": [], #[Ability.BLANK, Ability.BLANK, Ability.BLANK, Ability.BLANK],
-            "flaws": []
-        }
+
 
     @property
     def languages(self):

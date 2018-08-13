@@ -1,0 +1,162 @@
+[  
+   {  
+      "name":"Abadar",
+      "description":"The Master of the First Vault holds sway over cities, the law, merchants, and wealth.",
+      "alignment":"LN",
+      "edicts":"bring civilization to the frontiers, earn wealth through hard work and trade, follow the rule of law",
+      "anathema":"engage in banditry or piracy, steal, undermine a law-abiding court",
+      "favored_weapon":"crossbow"
+   },
+   {  
+      "name":"Asmodeus",
+      "description":"The Prince of Darkness reigns over contracts, pride, slavery, and tyranny.",
+      "alignment":"LE",
+      "edicts":"negotiate contracts to your best advantage, rule over weaker beings, show subservience to your betters",
+      "anathema":"break a contract, free a slave, insult Asmodeus's pride",
+      "favored_weapon":"mace"
+   },
+   {  
+      "name":"Calistria",
+      "description":"The mischievous goddess known as the Savored Sting exhorts lust, revenge, and trickery.",
+      "alignment":"CN",
+      "edicts":"pursue your personal freedom, take revenge, seek hedonistic thrills",
+      "anathema":"become too consumed by love or a need for revenge, let a slight go unanswered",
+      "favored_weapon":"whip"
+   },
+   {  
+      "name":"Cayden Cailean",
+      "description":"The Drunken Hero ascended from mortal life on a drunken dare, becoming the god of ale, freedom, and wine.",
+      "alignment":"CG",
+      "edicts":"seek glory and adventure, drink",
+      "anathema":"abide slavery, be mean or standoffish when drunk",
+      "favored_weapon":"rapier"
+   },
+   {  
+      "name":"Desna",
+      "description":"The aloof Song of the Spheres presides over dreams, luck, stars, and travelers.",
+      "alignment":"CG",
+      "edicts":"explore new places, express yourself through art and song, find what life has to offer, follow your dreams",
+      "anathema":"cause fear or despair, cast nightmare or use similar magic to corrupt dreams",
+      "favored_weapon":"starknife"
+   },
+   {  
+      "name":"Erastil",
+      "description":"Old Deadeye is god of family, farming, hunting, and trade. Long ago he was a horned god of the hunt, but his worship evolved to focus on rural communities.",
+      "alignment":"LG",
+      "edicts":"care for your home and family, fulfill your duties, keep the peace, protect the community",
+      "anathema":"abandon your home in its time of need, choose yourself over your community, tarnish your reputation, tell lies",
+      "favored_weapon":"longbow"
+   },
+   {  
+      "name":"Gorum",
+      "description":"Soldiers call out prayers to Our Lord in Iron, god of battle, strength, and weapons.",
+      "alignment":"CN",
+      "edicts":"attain victory in fair combat, push your limits",
+      "anathema":"kill prisoners or surrendering foes, prevent conflict through negotiation, win a battle through underhanded tactics or indirect magic",
+      "favored_weapon":"greatsword"
+   },
+   {  
+      "name":"Gozreh",
+      "description":"A deity of two aspects, known as the Wind and the Waves, Gozreh rules over nature, the sea, and weather.",
+      "alignment":"N",
+      "edicts":"cherish, protect, and respect nature in all its forms",
+      "anathema":"bring civilization to intrude on the wild",
+      "favored_weapon":"trident"
+   },
+   {  
+      "name":"Iomedae",
+      "description":"Iomedae is goddess of honor, justice, rulership, and valor, called the Inheritor after inheriting her mantle when the god of humanity perished. Many paladins follow her faith.",
+      "alignment":"LG",
+      "edicts":"be temperate, fight for justice and honor, hold valor in your heart",
+      "anathema":"abandon a companion in need, dishonor yourself, refuse a challenge from an equal",
+      "favored_weapon":"longsword"
+   },
+   {  
+      "name":"Irori",
+      "description":"The Master of Masters attained enlightenment and became god of history, knowledge, and self-perfection.",
+      "alignment":"LN",
+      "edicts":"be humble; help others perfect themselves; hone your body, mind, and spirit to a more perfect state; practice discipline",
+      "anathema":"repeatedly fail to maintain self-control",
+      "favored_weapon":"fist"
+   },
+   {  
+      "name":"Lamashtu",
+      "description":"The Mother of Monsters is goddess of aberrance, monsters, and nightmares.",
+      "alignment":"CE",
+      "edicts":"bring power to the outcasts and downtrodden, indoctrinate children in Lamashtu's teachings, make the beautiful monstrous, reveal the corruption and flaws in all things",
+      "anathema":"attempt to cure a madness or deformity, provide succor to Lamashtu's enemies (such as Desna)",
+      "favored_weapon":"falchion"
+   },
+   {  
+      "name":"Nethys",
+      "description":"The All-Seeing Eye, god of magic, has a dualistic nature of destruction and preservation, as his ability to witness all things shattered his mind.",
+      "alignment":"N",
+      "edicts":"seek out magical power and use it",
+      "anathema":"pursue mundane paths over magical ones",
+      "favored_weapon":"staff"
+   },
+   {  
+      "name":"Norgorber",
+      "description":"The god of greed, murder, poison, and secrets has four aspects: the ally of poisoners and alchemists Blackfingers, the murderous Father Skinsaw, the thieving Gray Master, and the secretive Reaper of Reputation.",
+      "alignment":"NE",
+      "edicts":"keep your true identity secret, sacrifice anyone if necessary, take every advantage in a fight, work from the shadows",
+      "anathema":"allow your true identity to be connected to your dark dealings, share a secret freely, show mercy",
+      "favored_weapon":"shortsword"
+   },
+   {  
+      "name":"Pharasma",
+      "description":"Ancient and powerful beyond even most other gods, the Lady of Graves presides over birth, death, fate, and prophecy.",
+      "alignment":"N",
+      "edicts":"strive to understand ancient prophecies, destroy undead, lay bodies to rest",
+      "anathema":"create undead, desecrate a corpse, rob a tomb",
+      "favored_weapon":"dagger"
+   },
+   {  
+      "name":"Rovagug",
+      "description":"The Rough Beast is god of destruction, disaster, and wrath. He is imprisoned within Golarion's core and seeks to one day break free and wreak havoc.",
+      "alignment":"CE",
+      "edicts":"destroy all things, free Rovagug from his prison",
+      "anathema":"create something new, let material ties restrain you, torture a victim or otherwise delay its destruction",
+      "favored_weapon":"greataxe"
+   },
+   {  
+      "name":"Sarenrae",
+      "description":"The Dawnflower is goddess of healing, honesty, redemption, and the sun. She seeks to redeem evil where possible, or else destroy it swiftly.",
+      "alignment":"NG",
+      "edicts":"destroy the spawn of Rovagug, protect allies, provide aid to the sick and wounded, seek and allow redemption",
+      "anathema":"create undead, fail to strike down evil, lie, succumb to darkness",
+      "favored_weapon":"scimitar"
+   },
+   {  
+      "name":"Shelyn",
+      "description":"The Eternal Rose is the goddess of art, beauty, love, and music. She seeks to one day redeem her corrupted brother Zon-Kuthon.",
+      "alignment":"NG",
+      "edicts":"be peaceful, choose and perfect an art, lead by example, see the beauty in all things",
+      "anathema":"destroy works of art or allow one to be destroyed except to save a life or in pursuit of greater art, refuse to accept surrender",
+      "favored_weapon":"glaive"
+   },
+   {  
+      "name":"Torag",
+      "description":"The dwarven deity called the Father of Creation is god of the forge, protection, and strategy.",
+      "alignment":"LG",
+      "edicts":"be honorable and forthright, keep your word, respect the forge, serve your people",
+      "anathema":"show mercy to the enemies of your people, tell lies or cheat someone, intentionally create inferior craftwork",
+      "favored_weapon":"warhammer"
+   },
+   {  
+      "name":"Urgathoa",
+      "description":"The amoral Pallid Princess oversees disease, gluttony, and undeath.",
+      "alignment":"NE",
+      "edicts":"become undead upon death, create or protect the undead, sate your appetites",
+      "anathema":"deny your appetites, destroy undead, sacrifice your life",
+      "favored_weapon":"scythe"
+   },
+   {  
+      "name":"Zon-Kuthon",
+      "description":"The Midnight Lord is god of darkness, envy, loss, and pain.",
+      "alignment":"LE",
+      "edicts":"bring pain to the world, mutilate your body",
+      "anathema":"create permanent or long-lasting sources of light, provide comfort to those who suffer",
+      "favored_weapon":"spiked chain"
+   }
+]

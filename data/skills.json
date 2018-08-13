@@ -1,0 +1,449 @@
+[  
+   {  
+      "name":"Acrobatics",
+      "ability":"dexterity",
+      "uses":[  
+         {  
+            "name":"Balance",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Escape",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Grab Edge",
+            "act":"reaction",
+            "trained":false
+         },
+         {  
+            "name":"Maintain Balance",
+            "act":"free action",
+            "trained":false
+         },
+         {  
+            "name":"Squeeze",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Tumble Through",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Maneuver in Flight",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Arcana",
+      "ability":"intelligence",
+      "uses":[  
+         {  
+            "name":"Recall Knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Borrow an Arcane Spell",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Identify Magic",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Learn an Arcane Spell",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Read Magic",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Athletics",
+      "ability":"strength",
+      "uses":[  
+         {  
+            "name":"Break Grapple",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Break Open",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Climb",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Grapple",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"High Jump",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Long Jump",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Shove",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Swim",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Trip",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Disarm",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Crafting",
+      "ability":"intelligence",
+      "uses":[  
+         {  
+            "name":"Repair",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Craft",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Identify Alchemy",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Deception",
+      "ability":"charisma",
+      "uses":[  
+         {  
+            "name":"Create a Diversion",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Impersonate",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Lie",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Feint",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Diplomacy",
+      "ability":"charisma",
+      "uses":[  
+         {  
+            "name":"Gather Information",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Make an Impression",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Request",
+            "act":"action",
+            "trained":false
+         }
+      ]
+   },
+   {  
+      "name":"Intimidation",
+      "ability":"charisma",
+      "uses":[  
+         {  
+            "name":"Demoralize",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Coerce",
+            "act":"activity",
+            "trained":false
+         }
+      ]
+   },
+   {  
+      "name":"Lore",
+      "ability":"intelligence",
+      "uses":[  
+         {  
+            "name":"Recall Knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Practice a Trade",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Medicine",
+      "ability":"wisdom",
+      "uses":[  
+         {  
+            "name":"Administer First Aid",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Treat Disease",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Treat Poison",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Nature",
+      "ability":"wisdom",
+      "uses":[  
+         {  
+            "name":"Command an Animal",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Handle an Animal",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Recall Knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Identify Magic",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Learn a Primal Spell",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Occultism",
+      "ability":"intelligence",
+      "uses":[  
+         {  
+            "name":"Recall Knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Identify Magic",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Learn an Occult Spell",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Read Esoterica",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Performance",
+      "ability":"charisma",
+      "uses":[  
+         {  
+            "name":"Perform",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Stage a Performance",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Religion",
+      "ability":"wisdom",
+      "uses":[  
+         {  
+            "name":"Recall Knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Identify Magic",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Learn a Divine Spell",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Read Scripture",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Society",
+      "ability":"intelligence",
+      "uses":[  
+         {  
+            "name":"Recall knowledge",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Subsist on the Streets",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Create Forgery",
+            "act":"activity",
+            "trained":true
+         },
+         {  
+            "name":"Decipher Writing",
+            "act":"activity",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Stealth",
+      "ability":"dexterity",
+      "uses":[  
+         {  
+            "name":"Conceal an Object",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Hide",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Sneak",
+            "act":"action",
+            "trained":false
+         }
+      ]
+   },
+   {  
+      "name":"Survival",
+      "ability":"wisdom",
+      "uses":[  
+         {  
+            "name":"Sense Direction",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Survive in the Wild",
+            "act":"activity",
+            "trained":false
+         },
+         {  
+            "name":"Cover Tracks",
+            "act":"action",
+            "trained":true
+         },
+         {  
+            "name":"Track",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   },
+   {  
+      "name":"Thievery",
+      "ability":"dexterity",
+      "uses":[  
+         {  
+            "name":"Palm an Object",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Steal an Object",
+            "act":"action",
+            "trained":false
+         },
+         {  
+            "name":"Disable a Device",
+            "act":"action",
+            "trained":true
+         },
+         {  
+            "name":"Pick a Lock",
+            "act":"action",
+            "trained":true
+         }
+      ]
+   }
+]
