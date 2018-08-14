@@ -22,3 +22,13 @@ class Ancestry:
 
     def __str__(self):
         return f"{self.name}"
+
+    def __call__(self, parent):
+        parent.boosts += self.boosts
+        parent.languages += self.languages
+        parent.senses += self.senses
+        parent.flaws += self.flaws
+        parent.size = self.size
+        parent.speed = self.speed
+        parent.traits = self.traits
+        parent.hit_points =
