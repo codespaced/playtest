@@ -4,7 +4,7 @@ from ancestry import Ancestry
 from background import Background
 from ancestry_feat import Ancestry_feat
 from ability_score import Abilities
-from boost import Boost
+import grant
 
 ABILITIES = "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"
 MAX_LEVEL = 20
@@ -13,19 +13,14 @@ class Character:
 
     def __init__(self, **kwargs):
         self.name = kwargs.get("name", "EMPTY")
-        self.ancestry = kwargs.get("ancestry", Ancestry())
+        self.grants = []
         self.klass = kwargs.get("klass", Klass())
         self.background = kwargs.get("background", Background())
         self.voluntary_flaws = kwargs.get("voluntary_flaws", [])
         #self.boosts = kwargs.get("boosts", [])
         self.items = kwargs.get("items", [])
         self.ability_scores = Abilities(parent=self)
-        self.saves = {
-            "Fortitude": 0,
-            "Reflex": 0,
-            "Will": 0
-        }
-
+        self.__ancestry = None
         self.__bonus_languages = []
 
         self.alignment = None
@@ -133,37 +128,41 @@ class Character:
                 return item.boosts
         return []
 
-    def set_boosts(self):
-        # reset boosts
-        self.boosts = []
-        self.add_boosts(self.ancestry.boosts, source="ancestry", value=1, level=1)
-        self.add_boosts(self.ancestry.flaws, source="flaw", value=-1, level=1)
-        self.add_boosts(self.background.boosts, "background", value=1, level=1)
-        self.add_boosts(self.voluntary_flaws, source="voluntary", value=-1, level=1)
-        self.add_boosts(self.klass.key_ability_score, source="class", value=1, level=1)
-        self.add_boosts(["Free"] * 4, source="level", value=1, level=1)
-        self.add_boosts(["Free"] * 4, source="level", value=1, level=5)
-        self.add_boosts(["Free"] * 4, source="level", value=1, level=10)
-        self.add_boosts(["Free"] * 4, source="level", value=1, level=15)
-        self.add_boosts(["Free"] * 4, source="level", value=1, level=20)
+    @property
+    def boosts(self):
+        return [boost for boost in self.grants if isinstance(boost, grant.Boost)]
 
-    def add_boosts(self, boosts, source, value, level):
-        for boost in boosts:
-            self.boosts.append(Boost(name=f"{source}.{boost}", source=source, value=value, ability=boost, level=level))
+#    def set_boosts(self):
+#        # reset boosts
+#        self.boosts = []
+#        self.add_boosts(self.ancestry.boosts, source="ancestry", value=1, level=1)
+#        self.add_boosts(self.ancestry.flaws, source="flaw", value=-1, level=1)
+#        self.add_boosts(self.background.boosts, "background", value=1, level=1)
+#        self.add_boosts(self.voluntary_flaws, source="voluntary", value=-1, level=1)
+#        self.add_boosts(self.klass.key_ability_score, source="class", value=1, level=1)
+#        self.add_boosts(["Free"] * 4, source="level", value=1, level=1)
+#        self.add_boosts(["Free"] * 4, source="level", value=1, level=5)
+#        self.add_boosts(["Free"] * 4, source="level", value=1, level=10)
+#        self.add_boosts(["Free"] * 4, source="level", value=1, level=15)
+#        self.add_boosts(["Free"] * 4, source="level", value=1, level=20)
 
-    def get_boosts(self, source, level):
-        return [boost for boost in self.boosts if boost.source == source and boost.level <= level]
+#    def add_boosts(self, boosts, source, value, level):
+#        for boost in boosts:
+#            self.boosts.append(Boost(name=f"{source}.{boost}", source=source, value=value, ability=boost, level=level))
 
-    def get_used(self, source, level):
-        return [boost for boost in self.boosts if boost.source == source and boost.level == level]
+#    def get_boosts(self, source, level):
+#        return [boost for boost in self.boosts if boost.source == source and boost.level <= level]
 
-    def get_available(self, source, level):
-        used = self.get_used(source, level)
-        used_abilities = [u.ability for u in used]
-        return [ability for ability in ABILITIES if ability not in used_abilities]
-
-    def get_free(self, source, level):
-        return [boost for boost in self.boosts if boost.free]
+#    def get_used(self, source, level):
+#        return [boost for boost in self.boosts if boost.source == source and boost.level == level]
+#
+#    def get_available(self, source, level):
+#        used = self.get_used(source, level)
+#        used_abilities = [u.ability for u in used]
+#        return [ability for ability in ABILITIES if ability not in used_abilities]
+#
+#    def get_free(self, source, level):
+#        return [boost for boost in self.boosts if boost.free]
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.name})"

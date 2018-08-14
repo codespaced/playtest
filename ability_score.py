@@ -1,12 +1,11 @@
 from math import floor
-from boost import Boost
 
 class Abilities:
-    names = "strength", "dexterity", "wisdom", "constitution", "charisma", "intelligence"
+    abilities = "strength", "dexterity", "wisdom", "constitution", "charisma", "intelligence"
 
     def __init__(self, **kwargs):
         self.parent = kwargs.get("parent", None)
-        self._scores = {ability:Ability_score(name=ability, parent=self.parent) for ability in Abilities.names}
+        self._scores = {ability:Ability_score(name=ability, parent=self.parent) for ability in Abilities.abilities}
 
     def __repr__(self):
         return f"{self.__class__.__name__}"
@@ -15,7 +14,7 @@ class Abilities:
         return len(self._scores)
 
     def __getattr__(self, k):
-        if k in Abilities.names:
+        if k in Abilities.abilities:
             return self._scores[k]
         else:
             raise AttributeError(k)
