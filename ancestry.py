@@ -1,5 +1,9 @@
 class Ancestry:
-    def __init__(self, **kwargs):
+    def __init__(self, ancestry=None, **kwargs):
+        if ancestry is not None:
+            self = ancestry
+
+    def __init(self, **kwargs):
         self.name = kwargs.get("name", "EMPTY")
         self.backgrounds = kwargs.get("backgrounds", [])
         self.bonus_languages = kwargs.get("bonus_languages", [])

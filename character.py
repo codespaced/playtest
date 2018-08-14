@@ -67,6 +67,15 @@ class Character:
 
 
     @property
+    def ancestry(self):
+        return self.__ancestry
+
+    @ancestry.setter
+    def ancestry(self, ancestry):
+        self.__ancestry = Ancestry(ancestry)
+        self.__ancestry(self)
+
+    @property
     def languages(self):
         return self.ancestry.languages + self.__bonus_languages
 
