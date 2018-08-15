@@ -38,11 +38,11 @@ class Ability_score:
         return self.get_value(self.parent.level)
 
     def get_value(self, level):
-        boosts = [boost for boost in self.parent.boosts if boost.ability == self.name and boost.level <= level]
-        count = sum([boost.value for boost in boosts])
+        boosts = [boost for boost in self.parent.boosts if boost.value == self.name and boost.level <= level]
+        count = sum([boost.amount for boost in boosts])
         # up to 18, a boost is +2, then it's only +1
         score = Ability_score.base + (0, 2, 4, 6, 8, 9, 10, 11, 12, -9, -9, -9, -9, -8, -6, -4, -2)[count]
-
+        print(boosts)
 #        item_boost = self.parent.item_boosts and self.name in self.parent.item_boosts
 #            if item_boosts[level]:
 #                score = max(score + 2, 18)

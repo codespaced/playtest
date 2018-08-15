@@ -49,21 +49,21 @@ class Ancestry:
         # flaws
         for value in self.flaws:
             grants.append(Boost(source, level, "ability", value, amount=-1))
-        # languages       
+        # languages
         for value in self.languages:
             grants.append(Grant(source, level, "languages", value))
         # senses
         for sense in self.senses:
             grants.append(Grant(source, level, "senses", value))
-        # size        
+        # size
         grants.append(Grant(source, level, "size", self.size))
-        # speed        
+        # speed
         grants.append(Grant(source, level, "speed", self.speed))
         # hit points
-        grants.append(Hit_points(source, level, "hit_points", f"{self}", amount=self.hit_points))
+        grants.append(Hit_points(source, level, "hit_points", self.hit_points, [1]))
         # traits
         for value in self.traits:
-            grants.append(Boost(source, level, "traits", value))
+            grants.append(Grant(source, level, "traits", value))
         # special
         for value in self.special:
             grants.append(Grant(source, level, "special", value))

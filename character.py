@@ -1,3 +1,4 @@
+from typing import Dict, Tuple, List
 from collections import Counter
 from klass import Klass
 from ancestry import Ancestry
@@ -71,11 +72,11 @@ class Character:
         self.__ancestry(self)
 
     @property
-    def languages(self):
+    def languages(self) -> List:
         return self.ancestry.languages + self.__bonus_languages
 
     @languages.setter
-    def languages(self, languages):
+    def languages(self, languages) -> None:
         # try to split on ", "
         try:
             languages = languages.split(", ")
@@ -94,10 +95,15 @@ class Character:
         return self.ancestry.speed
 
     def get_hit_points(self, level):
-        ancestry = self.ancestry.hit_points
-        klass = self.klass.hit_points
+        grants = self.grants_by_target("hit_points")
         con = self.ability_scores.constitution.bonus
-        return ancestry + (klass + con) * level
+        total = con * level
+        for lvl in range(level):
+            total += sum([grant.value for grant in grants if lvl in grant.levels])
+        return total
+
+    def grants_by_target(self, target):
+        return [grant for grant in self.grants if grant.target == target]
 
     @property
     def hit_points_by_level(self):
@@ -130,7 +136,11 @@ class Character:
 
     @property
     def boosts(self):
-        return [boost for boost in self.grants if isinstance(boost, grant.Boost)]
+        return self.grants_by_target("ability")
+
+    @property
+    def special(self):
+        return self.grants_by_target("special")
 
 #    def set_boosts(self):
 #        # reset boosts
