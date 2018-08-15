@@ -1,7 +1,7 @@
 import random
 from character import Character
 from alignment import alignment
-from ability_score import Abilities
+from abilities import Abilities
 import grant
 import data
 
@@ -18,7 +18,8 @@ c.klass=random.choice(data.classes)
 c.level=2
 print(c)
 print("ancestry:", c.ancestry)
-print("special:", c.special)
+if c.special:
+    print("special:", c.special)
 
 # assign random boosts for unselected free boosts
 #for source in Boost.sources:
@@ -27,7 +28,7 @@ print("special:", c.special)
 #        available = c.get_available(source, c.level)
 #        boost.ability = random.choice(available)
 
-c.print_ability_scores()
+c.ability_scores.print()
 
 print("size:", c.size)
 print("background:", c.background)
@@ -39,7 +40,7 @@ print("alignment:", c.alignment)
 #deity
 #age
 #gender
-if c.ancestry.bonus_languages:
+if c.ancestry.bonus_languages and c.ability_scores.intelligence > 14:
     c.languages = random.choice(c.ancestry.bonus_languages)
 print("languages:", c.languages)
 print("speed:", c.speed)

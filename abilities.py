@@ -1,3 +1,4 @@
+from functools import total_ordering
 from math import floor
 import grant
 
@@ -33,6 +34,7 @@ class Abilities:
         print(f"{self.constitution} ({self.constitution.bonus:+d}) \t {self.charisma} ({self.charisma.bonus:+d}) ")
         print()
 
+@total_ordering
 class Ability_score:
     # Holds the calculation for an ability score
     base = 10
@@ -47,15 +49,20 @@ class Ability_score:
     def __str__(self):
         return f"{self.name[:3].upper()}: {self.value:2d}"
 
+    def __eq__(self, other):
+        return self.value == other
+
+    def __lt__(self, other):
+        return self.value < other
+
     @property
     def value(self):
         return self.get_value(self.parent.level)
 
     def get_value(self, level):
-        boosts = [boost for boost in self.parent.boosts if boost.ability == self.name and boost.level <= level]
-        count = sum([boost.value for boost in boosts])
+        boosts = sum([boost.amount for boost in self.parent.boosts if boost.value == self.name and boost.level <= level])
         # up to 18, a boost is +2, then it's only +1
-        score = Ability_score.base + (0, 2, 4, 6, 8, 9, 10, 11, 12, -9, -9, -9, -9, -8, -6, -4, -2)[count]
+        score = Ability_score.base + (0, 2, 4, 6, 8, 9, 10, 11, 12, -9, -9, -9, -9, -8, -6, -4, -2)[boosts]
 
 #        item_boost = self.parent.item_boosts and self.name in self.parent.item_boosts
 #            if item_boosts[level]:
@@ -68,30 +75,3 @@ class Ability_score:
     @property
     def bonus(self):
         return self.get_bonus()
-
-
-
-if __name__ == '__main__':
-    class Thing:
-        pass
-    item = Thing()
-    item.ancestry = Thing()
-    item.ancestry.boosts = ["Strength", "Dexterity"]
-    item.ancestry.flaw = ["Charisma"]
-    item.background = Thing()
-    item.background.boosts = ["Strength", "Wisdom"]
-    item.klass = Thing()
-    item.klass.boosts = ["Strength", "Wisdom"]
-    item.voluntary_flaws = ["Charisma"]
-    item.boosts = {
-        "first":["Strength", "Dexterity", "Wisdom", "Constitution"],
-        "fifth":["Strength", "Dexterity", "Wisdom", "Constitution"],
-        "tenth":["Strength", "Dexterity", "Wisdom", "Constitution"],
-        "fifteenth":["Strength", "Dexterity", "Wisdom", "Constitution"],
-        "twentieth":["Strength", "Dexterity", "Wisdom", "Constitution"],
-    }
-    item.item_boost = [""] * 20
-
-    for a in ["Strength", "Dexterity", "Wisdom", "Constitution", "Charisma", "Intelligence"]:
-        score = Ability_score(name=a, parent=item)
-        print(score, score.value, score.bonus)

@@ -4,7 +4,7 @@ from klass import Klass
 from ancestry import Ancestry
 from background import Background
 from ancestry_feat import Ancestry_feat
-from ability_score import Abilities
+from abilities import Abilities
 import grant
 
 ABILITIES = "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"
@@ -72,6 +72,39 @@ class Character:
         self.__ancestry(self)
 
     @property
+    def boosts(self):
+        return self.grants_by_target("ability")
+
+    @property
+    def class_dc(self):
+        return self.get_class_dc(self.level)
+
+    @property
+    def class_dc_by_level(self):
+        return [self.get_class_dc(level) for level in range(MAX_LEVEL)]
+
+    @property
+    def hit_points(self):
+        return self.get_hit_points(self.level)
+
+    def get_class_dc(self, level):
+        # todo: key ability bonus
+        key = 0
+        return 10 + level + key
+
+    @property
+    def hit_points_by_level(self):
+        # return a list of hps. we can choose what level we want on the other end
+        return [self.get_hit_points(level) for level in range(MAX_LEVEL)]
+
+    @property
+    def item_boosts(self):
+        for item in self.items:
+            if item.potent:
+                return item.boosts
+        return []
+
+    @property
     def languages(self) -> List:
         return self.ancestry.languages + self.__bonus_languages
 
@@ -91,6 +124,10 @@ class Character:
         return self.ancestry.size
 
     @property
+    def special(self):
+        return self.grants_by_target("special")
+
+    @property
     def speed(self):
         return self.ancestry.speed
 
@@ -105,74 +142,6 @@ class Character:
     def grants_by_target(self, target):
         return [grant for grant in self.grants if grant.target == target]
 
-    @property
-    def hit_points_by_level(self):
-        # return a list of hps. we can choose what level we want on the other end
-        return [self.get_hit_points(level) for level in range(MAX_LEVEL)]
-
-    @property
-    def hit_points(self):
-        return self.get_hit_points(self.level)
-
-    def get_class_dc(self, level):
-        # todo: key ability bonus
-        key = 0
-        return 10 + level + key
-
-    @property
-    def class_dc_by_level(self):
-        return [self.get_class_dc(level) for level in range(MAX_LEVEL)]
-
-    @property
-    def class_dc(self):
-        return self.get_class_dc(self.level)
-
-    @property
-    def item_boosts(self):
-        for item in self.items:
-            if item.potent:
-                return item.boosts
-        return []
-
-    @property
-    def boosts(self):
-        return self.grants_by_target("ability")
-
-    @property
-    def special(self):
-        return self.grants_by_target("special")
-
-#    def set_boosts(self):
-#        # reset boosts
-#        self.boosts = []
-#        self.add_boosts(self.ancestry.boosts, source="ancestry", value=1, level=1)
-#        self.add_boosts(self.ancestry.flaws, source="flaw", value=-1, level=1)
-#        self.add_boosts(self.background.boosts, "background", value=1, level=1)
-#        self.add_boosts(self.voluntary_flaws, source="voluntary", value=-1, level=1)
-#        self.add_boosts(self.klass.key_ability_score, source="class", value=1, level=1)
-#        self.add_boosts(["Free"] * 4, source="level", value=1, level=1)
-#        self.add_boosts(["Free"] * 4, source="level", value=1, level=5)
-#        self.add_boosts(["Free"] * 4, source="level", value=1, level=10)
-#        self.add_boosts(["Free"] * 4, source="level", value=1, level=15)
-#        self.add_boosts(["Free"] * 4, source="level", value=1, level=20)
-
-#    def add_boosts(self, boosts, source, value, level):
-#        for boost in boosts:
-#            self.boosts.append(Boost(name=f"{source}.{boost}", source=source, value=value, ability=boost, level=level))
-
-#    def get_boosts(self, source, level):
-#        return [boost for boost in self.boosts if boost.source == source and boost.level <= level]
-
-#    def get_used(self, source, level):
-#        return [boost for boost in self.boosts if boost.source == source and boost.level == level]
-#
-#    def get_available(self, source, level):
-#        used = self.get_used(source, level)
-#        used_abilities = [u.ability for u in used]
-#        return [ability for ability in ABILITIES if ability not in used_abilities]
-#
-#    def get_free(self, source, level):
-#        return [boost for boost in self.boosts if boost.free]
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.name})"
@@ -183,11 +152,3 @@ class Character:
     def display(self):
         for key in [self.ancestry, self.background, self.klass, self.bonuses, self.senses, self.feats]:
             print(f"{key}")
-
-    def print_ability_scores(self):
-        print("\n\n")
-        print(f"{self.ability_scores.strength}\t\t{self.ability_scores.intelligence}")
-        print(f"{self.ability_scores.dexterity}\t\t{self.ability_scores.wisdom}")
-        print(f"{self.ability_scores.constitution}\t\t{self.ability_scores.charisma}")
-        print("\n\n")
-
