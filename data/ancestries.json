@@ -53,6 +53,29 @@
       ],
       "flaws": [
         "constitution"
+      ],
+      "hit_points": 6,
+      "size": "Medium",
+      "speed": 30,
+      "languages": [
+        "Common",
+        "Elven"
+      ],
+      "bonus_languages": [
+	"Celestial",
+	"Draconic",
+	"Gnoll",
+	"Gnomish",
+	"Goblin",
+	"Orcish",
+	"Sylvan"
+      ],
+      "traits": [
+        "Elf",
+        "Humanoid"
+      ],
+      "senses": [
+        "Low-light Vision"
       ]
     },
     {
@@ -64,6 +87,29 @@
       ],
       "flaws": [
         "strength"
+      ],
+      "hit_points": 8,
+      "size": "Small",
+      "speed": 20,
+      "languages": [
+        "Common",
+        "Gnomish",
+	"Sylvan"
+      ],
+      "bonus_languages": [
+        "Draconic",
+        "Dwarven",
+	"Elven",
+        "Goblin",
+        "Jotun",
+        "Orcish"
+      ],
+      "traits": [
+        "Gnome",
+        "Humanoid"
+      ],
+      "senses": [
+        "Low-light Vision"
       ]
     },
     {
@@ -75,6 +121,28 @@
       ],
       "flaws": [
         "wisdom"
+      ],
+      "hit_points": 6,
+      "size": "Small",
+      "speed": 25,
+      "languages": [
+        "Common",
+        "Goblin"
+      ],
+      "bonus_languages": [
+        "Draconic",
+        "Dwarven",
+        "Gnoll",
+        "Gnomish",
+        "Halfling",
+        "Orcish"
+      ],
+      "traits": [
+        "Dwarf",
+        "Humanoid"
+      ],
+      "senses": [
+        "Darkvision"
       ]
     },
     {
@@ -123,6 +191,25 @@
         "Free"
       ],
       "flaws": [
+      ],
+      "hit_points": 10,
+      "size": "Medium",
+      "speed": 20,
+      "languages": [
+        "Common",
+        "Dwarf"
+      ],
+      "bonus_languages": [
+        "Giant",
+        "Gnome",
+        "Goblin",
+        "Orc",
+        "Terran",
+        "Undercommon"
+      ],
+      "traits": [
+        "Halfling",
+        "Humanoid"
       ]
     }
   ]

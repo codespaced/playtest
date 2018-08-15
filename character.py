@@ -15,13 +15,13 @@ class Character:
     def __init__(self, **kwargs):
         self.name = kwargs.get("name", "EMPTY")
         self.grants = []
-        self.klass = kwargs.get("klass", Klass())
         self.background = kwargs.get("background", Background())
         self.voluntary_flaws = kwargs.get("voluntary_flaws", [])
         #self.boosts = kwargs.get("boosts", [])
         self.items = kwargs.get("items", [])
         self.ability_scores = Abilities(parent=self)
         self.__ancestry = None
+        self.__klass = None
         self.__bonus_languages = []
 
         self.alignment = None
@@ -36,7 +36,6 @@ class Character:
             "class": [],
             "skill": []
         }
-        self.class_features = []
         self.strikes = {
             "melee": [],
             "ranged": []
@@ -58,7 +57,7 @@ class Character:
         self.bulk = [] #namedtuple("bulk", ["bulk", "light", "encumbered", "max"])
         self.resonance = 0
         self.experience = 0
-        self.senses = {"Perception": self.skills["Perception"]}
+
         self.hero_points = 0
 
 
@@ -105,6 +104,15 @@ class Character:
         return []
 
     @property
+    def klass(self):
+        return self.__klass
+
+    @klass.setter
+    def klass(self, klass):
+        self.__klass = Klass(klass)
+        self.__klass(self)
+
+    @property
     def languages(self) -> List:
         return self.ancestry.languages + self.__bonus_languages
 
@@ -131,17 +139,53 @@ class Character:
     def speed(self):
         return self.ancestry.speed
 
+    def grants_by_target(self, target):
+        return [grant for grant in self.grants if grant.target == target]
+
     def get_hit_points(self, level):
         grants = self.grants_by_target("hit_points")
+        print(grants)
         con = self.ability_scores.constitution.bonus
         total = con * level
         for lvl in range(level):
             total += sum([grant.value for grant in grants if lvl in grant.levels])
         return total
 
-    def grants_by_target(self, target):
-        return [grant for grant in self.grants if grant.target == target]
+    @property
+    def hit_points(self):
+        return self.get_hit_points(self.level)
 
+    def get_class_dc(self, level):
+        # todo: key ability bonus
+        key = 0
+        return 10 + level + key
+
+    @property
+    def class_dc_by_level(self):
+        return [self.get_class_dc(level) for level in range(MAX_LEVEL)]
+
+    @property
+    def class_dc(self):
+        return self.get_class_dc(self.level)
+
+    @property
+    def item_boosts(self):
+        for item in self.items:
+            if item.potent:
+                return item.boosts
+        return []
+
+    @property
+    def boosts(self):
+        return self.grants_by_target("ability")
+
+    @property
+    def special(self):
+        return self.grants_by_target("special")
+
+    @property
+    def senses(self):
+        return self.grants_by_target("senses")
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.name})"
