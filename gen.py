@@ -6,18 +6,14 @@ import grant
 import data
 
 c = Character(name="Bob")
-#,
-#    ancestry=random.choice(data.ancestries),
-#    background=random.choice(data.backgrounds),
-#    klass=random.choice(data.classes),
-#    level=2)
-#c.set_boosts()
 c.ancestry=random.choice(data.ancestries)
 c.background=random.choice(data.backgrounds)
 c.klass=random.choice(data.classes)
 c.level=2
 print(c)
 print("ancestry:", c.ancestry)
+print("class:", c.klass)
+print("senses:", c.senses)
 print("special:", c.special)
 
 # assign random boosts for unselected free boosts

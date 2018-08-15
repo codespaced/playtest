@@ -53,7 +53,7 @@ class Ancestry:
         for value in self.languages:
             grants.append(Grant(source, level, "languages", value))
         # senses
-        for sense in self.senses:
+        for value in self.senses:
             grants.append(Grant(source, level, "senses", value))
         # size
         grants.append(Grant(source, level, "size", self.size))
