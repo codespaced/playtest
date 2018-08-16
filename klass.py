@@ -41,8 +41,8 @@ class Klass:
         # hit points
         grants.append(Hit_points(source, level, "hit_points", self.hit_points, range(1,21)))
         # proficiencies
-        for key, value in self.proficiencies.items():
-            grants.append(Grant(source, level, "skills", value))
+        #for key, value in self.proficiencies.items():
+        #    grants.append(Grant(source, level, "skills", value))
         # signature skills
         for value in self.signature_skills:
             grants.append(Grant(source, level, "signature_skills", value))
