@@ -3,7 +3,7 @@ from collections import Counter
 from klass import Klass
 from ancestry import Ancestry
 from background import Background
-from ancestry_feat import Ancestry_feat
+from ancestry_feat import AncestryFeat
 from abilities import Abilities
 import grant
 
