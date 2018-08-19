@@ -1,4 +1,4 @@
-from grant import Grant, Boost, Sense, Hit_points
+from grant import Grant, Boost, Sense, HitPoints
 
 
 class Ancestry:
@@ -61,7 +61,7 @@ class Ancestry:
         # speed
         grants.append(Grant(source, level, "speed", self.speed))
         # hit points
-        grants.append(Hit_points(source, level, "hit_points", self.hit_points, [1]))
+        grants.append(HitPoints(source, level, "hit_points", self.hit_points, [1]))
         # traits
         for value in self.traits:
             grants.append(Grant(source, level, "traits", value))

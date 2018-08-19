@@ -46,7 +46,7 @@ class Sense(Grant):
         self.title = title
 
 
-class Hit_points(Grant):
+class HitPoints(Grant):
     # a hit point increase
     def __init__(self, source: str, level: int, target: str, value: any, levels: List):
         super().__init__(source, level, target, value)
