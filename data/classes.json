@@ -31,7 +31,110 @@
          "Arcana",
          "Crafting",
          "Medicine"
+      ],
+     "advancement": {
+      "1": [
+        "advanced alchemy",
+        "alchemist feat",
+        "formula book",
+        "studied resonance"
+      ],
+      "2": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "3": [
+        {"empower bombs": 2},
+        "general feat",
+        "skill increase"
+      ],
+      "4": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "5": [
+        "ability boosts",
+        "ancestry feat",
+        "mutagen crafting",
+        "skill increase"
+      ],
+      "6": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "7": [
+        {"empower bombs": 3},
+        "general feat",
+        "skill increase"
+      ],
+      "8": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "9": [
+        "ancestry feat",
+        "expanded resonance",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "alchemist feat",
+        "skill feat"
+      ],
+      "11": [
+        {
+          "empower bombs": 4
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "12": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "13": [
+        "ancestry feat",
+        "double elixir",
+        "skill increase"
+      ],
+      "14": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "15": [
+        {
+          "empower bombs": 5
+        },
+        "ability boosts",
+        "general feat",
+        "skill increase"
+      ],
+      "16": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "17": [
+        "alchemical alacrity",
+        "ancestry feat",
+        "skill increase"
+      ],
+      "18": [
+        "alchemist feat",
+        "skill feat"
+      ],
+      "19": [
+        {
+          "empower bombs": 6
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "alchemist feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Barbarian",
@@ -69,6 +172,103 @@
          "Athletics",
          "Intimidation"
       ],
+      "advancement": {
+      "1": [
+        "barbarian feat",
+        "rage",
+        "totem"
+      ],
+      "2": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "3": [
+        "critical brutality",
+        "general feat",
+        "skill increase"
+      ],
+      "4": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "5": [
+        "ability boosts",
+        "ancestry feat",
+        "deny advantage",
+        "skill increase"
+      ],
+      "6": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "7": [
+        "general feat",
+        "juggernaut",
+        "skill increase"
+      ],
+      "8": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "9": [
+        "ancestry feat",
+        "raging resistance",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "barbarian feat",
+        "skill feat"
+      ],
+      "11": [
+        "general feat",
+        "mighty rage",
+        "skill increase"
+      ],
+      "12": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "13": [
+        "ancestry feat",
+        "improved juggernaut",
+        "skill increase",
+        "weapon fury"
+      ],
+      "14": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "15": [
+        "ability boosts",
+        "general feat",
+        "indomitable will",
+        "skill increase"
+      ],
+      "16": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "17": [
+        "ancestry feat",
+        "skill increase",
+        "tireless rage"
+      ],
+      "18": [
+        "barbarian feat",
+        "skill feat"
+      ],
+      "19": [
+        "devastating strikes",
+        "general feat",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "barbarian feat",
+        "skill feat"
+      ]
+    },
       "class_feats":[
          {
             "name":"Acute Vision",
@@ -524,7 +724,7 @@
          ],
          "5":[
             {
-               "spell_level":2
+               "spell_level":3
             },
             "ability boosts",
             "ancestry feat",
@@ -561,7 +761,7 @@
             {
                "spell_level":6
             },
-            "ancestry feat",
+            "general feat",
             "skill increase"
          ],
          "12":[
@@ -603,9 +803,6 @@
             "skill feat"
          ],
          "19":[
-            {
-               "spell_level":5
-            },
             "legendary spellcaster",
             "general feat",
             "skill increase"
@@ -816,7 +1013,120 @@
          "Performance",
          "Religion",
          "Deity"
+      ],
+      "advancement": {
+      "1": [
+        "anathema",
+        "channel energy",
+        "deity and domain",
+        "divine spellcasting"
+      ],
+      "2": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "3": [
+        {
+          "spell level": 2
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "4": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "5": [
+        {
+          "spell level": 3
+        },
+        "ability boosts",
+        "ancestry feat",
+        "skill increase"
+      ],
+      "6": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "7": [
+        {
+          "spell level": 4
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "8": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "9": [
+        {
+          "spell level": 5
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "cleric feat",
+        "skill feat"
+      ],
+      "11": [
+        {
+          "spell level": 6
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "12": [
+        "expert spellcaster",
+        "skill feat"
+      ],
+      "13": [
+        {
+          "spell level": 7
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "14": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "15": [
+        {
+          "spell level": 8
+        },
+        "ability boosts",
+        "general feat",
+        "skill increase"
+      ],
+      "16": [
+        "master spellcaster",
+        "skill feat"
+      ],
+      "17": [
+        {
+          "spell level": 9
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "18": [
+        "cleric feat",
+        "skill feat"
+      ],
+      "19": [
+        "legendary spellcaster",
+        "general feat",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "cleric feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Druid",
@@ -856,7 +1166,123 @@
          "Nature",
          "Survival",
          "Order"
+      ],
+      "advancement": {
+      "1": [
+        {
+          "language": "Druidic"
+        },
+        "anathema",
+        "druidic order",
+        "primal spellcasting",
+        "wild empathy"
+      ],
+      "2": [
+        "druid feat",
+        "skill feat"
+      ],
+      "3": [
+        {
+          "spell level": 2
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "4": [
+        "druid feat",
+        "skill feat"
+      ],
+      "5": [
+        {
+          "spell level": 3
+        },
+        "ability boosts",
+        "ancestry feat",
+        "skill increase"
+      ],
+      "6": [
+        "druid feat",
+        "skill feat"
+      ],
+      "7": [
+        {
+          "spell level": 4
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "8": [
+        "druid feat",
+        "skill feat"
+      ],
+      "9": [
+        {
+          "spell level": 5
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "druid feat",
+        "skill feat"
+      ],
+      "11": [
+        {
+          "spell level": 6
+        },
+        "general feat",
+        "skill increase"
+      ],
+      "12": [
+        "expert spellcaster",
+        "skill feat"
+      ],
+      "13": [
+        {
+          "spell level": 7
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "14": [
+        "druid feat",
+        "skill feat"
+      ],
+      "15": [
+        {
+          "spell level": 8
+        },
+        "ability boosts",
+        "general feat",
+        "skill increase"
+      ],
+      "16": [
+        "master spellcaster",
+        "skill feat"
+      ],
+      "17": [
+        {
+          "spell level": 9
+        },
+        "ancestry feat",
+        "skill increase"
+      ],
+      "18": [
+        "druid feat",
+        "skill feat"
+      ],
+      "19": [
+        "legendary spellcaster",
+        "general feat",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "druid feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Fighter",
@@ -890,7 +1316,102 @@
          "Acrobatics",
          "Athletics",
          "Crafting"
+      ],
+      "advancement": {
+      "1": [
+        "attack of opportunity",
+        "fighter feat"
+      ],
+      "2": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "3": [
+        "general feat",
+        "skill increase",
+        "weapon mastery"
+      ],
+      "4": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "5": [
+        "ability boosts",
+        "bravery",
+        "ancestry feat",
+        "skill increase"
+      ],
+      "6": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "7": [
+        "battlefield surveyor",
+        "general feat",
+        "skill increase"
+      ],
+      "8": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "9": [
+        "ancestry feat",
+        "combat flexibility",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "fighter feat",
+        "skill feat"
+      ],
+      "11": [
+        "general feat",
+        "heavy armor expertise",
+        "skill increase"
+      ],
+      "12": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "13": [
+        "ancestry feat",
+        "skill increase",
+        "weapon specialization"
+      ],
+      "14": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "15": [
+        "ability boosts",
+        "general feat",
+        "improved flexibility",
+        "skill increase"
+      ],
+      "16": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "17": [
+        "ancestry feat",
+        "armor mastery",
+        "skill increase"
+      ],
+      "18": [
+        "fighter feat",
+        "skill feat"
+      ],
+      "19": [
+        "general feat",
+        "skill increase",
+        "weapon legend"
+      ],
+      "20": [
+        "ability boosts",
+        "fighter feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Monk",
@@ -923,7 +1444,112 @@
          "Acrobatics",
          "Athletics",
          "Religion"
+      ],
+      "advancement": {
+      "1": [
+        "flurry of blows",
+        "graceful expertise",
+        "monk feat",
+        "powerful fist"
+      ],
+      "2": [
+        "monk feat",
+        "skill feat"
+      ],
+      "3": [
+        "general feat",
+        "incredible movement 10 feet",
+        "magic strikes",
+        "skill increase"
+      ],
+      "4": [
+        "monk feat",
+        "skill feat"
+      ],
+      "5": [
+        "ability boosts",
+        "ancestry feat",
+        "metal strikes",
+        "skill increase"
+      ],
+      "6": [
+        "incredible movement 15 feet",
+        "monk feat",
+        "skill feat"
+      ],
+      "7": [
+        "general feat",
+        "path to perfection",
+        "skill increase"
+      ],
+      "8": [
+        "monk feat",
+        "skill feat"
+      ],
+      "9": [
+        "ancestry feat",
+        "fierce flurry",
+        "incredible movement 20 feet",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "monk feat",
+        "skill feat"
+      ],
+      "11": [
+        "general feat",
+        "second path to perfection",
+        "skill increase"
+      ],
+      "12": [
+        "incredible movement 25 feet",
+        "monk feat",
+        "skill feat"
+      ],
+      "13": [
+        "ancestry feat",
+        "graceful mastery",
+        "skill increase",
+        "unarmed mastery"
+      ],
+      "14": [
+        "monk feat",
+        "skill feat"
+      ],
+      "15": [
+        "ability boosts",
+        "general feat",
+        "incredible movement 30 feet",
+        "skill increase",
+        "third path to perfection"
+      ],
+      "16": [
+        "monk feat",
+        "skill feat"
+      ],
+      "17": [
+        "adamantine strikes",
+        "ancestry feat",
+        "graceful legend",
+        "skill increase"
+      ],
+      "18": [
+        "incredible movement 35 feet",
+        "monk feat",
+        "skill feat"
+      ],
+      "19": [
+        "general feat",
+        "perfected form",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "monk feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Paladin",
@@ -957,7 +1583,106 @@
          "Crafting",
          "Diplomacy",
          "Religion"
+      ],
+      "advancement": {
+      "1": [
+        "anathema",
+        "champion powers",
+        "code of conduct",
+        "deific weapon",
+        "paladin feat",
+        "retributive strike"
+      ],
+      "2": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "3": [
+        "general feat",
+        "righteous ally",
+        "skill increase"
+      ],
+      "4": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "5": [
+        "ability boosts",
+        "ancestry feat",
+        "skill increase",
+        "weapon expertise"
+      ],
+      "6": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "7": [
+        "armored fortitude",
+        "general feat",
+        "skill increase"
+      ],
+      "8": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "9": [
+        "ancestry feat",
+        "holy smite",
+        "skill increase"
+      ],
+      "10": [
+        "ability boosts",
+        "paladin feat",
+        "skill feat"
+      ],
+      "11": [
+        "aura of justice",
+        "general feat",
+        "skill increase"
+      ],
+      "12": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "13": [
+        "ancestry feat",
+        "armor mastery",
+        "skill increase"
+      ],
+      "14": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "15": [
+        "ability boosts",
+        "general feat",
+        "skill increase",
+        "weapon mastery"
+      ],
+      "16": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "17": [
+        "ancestry feat",
+        "legendary armor",
+        "skill increase"
+      ],
+      "18": [
+        "paladin feat",
+        "skill feat"
+      ],
+      "19": [
+        "general feat",
+        "hero's defiance",
+        "skill increase"
+      ],
+      "20": [
+        "ability boosts",
+        "paladin feat",
+        "skill feat"
       ]
+    }
    },
    {
       "name":"Ranger",
