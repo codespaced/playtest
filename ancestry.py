@@ -1,5 +1,6 @@
 from grant import Grant, Boost, Sense, Hit_points
 
+
 class Ancestry:
     def __init__(self, ancestry=None, **kwargs):
         if ancestry is None:

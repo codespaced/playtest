@@ -1,13 +1,13 @@
 class Saves:
-    saves = {"fortitude":"constitution",
-             "reflex":"dexterity",
-             "will":"wisdom"}
+    saves = {"fortitude": "constitution",
+             "reflex": "dexterity",
+             "will": "wisdom"}
 
     def __init__(self, **kwargs):
         self.parent = kwargs.get("parent", None)
         self._saves = {}
         for name, proficiency in self.parent.klass.proficiencies['saving_throws'].items():
-            #print(name, proficiency, Saves.saves[name])
+            # print(name, proficiency, Saves.saves[name])
             self._saves[name] = Save(name=name, parent=self.parent, ability=Saves.saves[name], proficiency=proficiency)
 
     def __repr__(self):
@@ -27,9 +27,10 @@ class Saves:
         print(self.reflex)
         print(self.will)
 
+
 class Save:
 
-    proficiency = {"trained":0, "expert":1, "master":2, "legendary":3}
+    proficiency = {"trained": 0, "expert": 1, "master": 2, "legendary": 3}
 
     def __init__(self, name, parent, ability, proficiency):
         self.name = name

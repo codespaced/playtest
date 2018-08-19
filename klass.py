@@ -1,5 +1,6 @@
 from grant import Grant, Boost, Sense, Hit_points
 
+
 class Klass:
     def __init__(self, klass=None, **kwargs):
         if klass is None:
@@ -22,7 +23,6 @@ class Klass:
             self.class_feats = klass.class_feats
             self.advancement = klass.advancement
             self.spell_progression = klass.spell_progression
-
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.name})"
