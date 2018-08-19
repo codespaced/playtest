@@ -1,4 +1,4 @@
-class Ancestry_feat:
+class AncestryFeat:
     def __init__(self, **kwargs):
         self.name = kwargs.get("name", "")
         self.level = kwargs.get("level", 0)

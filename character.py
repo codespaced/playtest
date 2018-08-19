@@ -3,12 +3,13 @@ from collections import Counter
 from klass import Klass
 from ancestry import Ancestry
 from background import Background
-from ancestry_feat import Ancestry_feat
+from ancestry_feat import AncestryFeat
 from abilities import Abilities
 import grant
 
 ABILITIES = "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"
 MAX_LEVEL = 20
+
 
 class Character:
 
@@ -17,7 +18,7 @@ class Character:
         self.grants = []
         self.background = kwargs.get("background", Background())
         self.voluntary_flaws = kwargs.get("voluntary_flaws", [])
-        #self.boosts = kwargs.get("boosts", [])
+        # self.boosts = kwargs.get("boosts", [])
         self.items = kwargs.get("items", [])
         self.ability_scores = Abilities(parent=self)
         self.__ancestry = None
@@ -52,14 +53,13 @@ class Character:
             "gear": [],
             "ready": [],
             "stowed": [],
-            "coins": [] #namedtuple("coins", ["cp", "sp", "gp", "pp"])
+            "coins": []  # namedtuple("coins", ["cp", "sp", "gp", "pp"])
         }
-        self.bulk = [] #namedtuple("bulk", ["bulk", "light", "encumbered", "max"])
+        self.bulk = []  # namedtuple("bulk", ["bulk", "light", "encumbered", "max"])
         self.resonance = 0
         self.experience = 0
 
         self.hero_points = 0
-
 
     @property
     def ancestry(self):

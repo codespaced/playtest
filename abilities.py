@@ -2,6 +2,7 @@ from functools import total_ordering
 from math import floor
 import grant
 
+
 class Abilities:
     abilities = "strength", "intelligence", "dexterity", "wisdom", "constitution", "charisma"
 
@@ -33,6 +34,7 @@ class Abilities:
         print(f"{self.dexterity} ({self.dexterity.bonus:+d}) \t {self.wisdom} ({self.wisdom.bonus:+d}) ")
         print(f"{self.constitution} ({self.constitution.bonus:+d}) \t {self.charisma} ({self.charisma.bonus:+d}) ")
         print()
+
 
 @total_ordering
 class Ability_score:

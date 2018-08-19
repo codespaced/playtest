@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class alignment(Enum):
     LAWFUL_GOOD = "LG"
     LAWFUL_NEUTRAL = "LN"
