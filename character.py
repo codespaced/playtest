@@ -1,10 +1,11 @@
-from typing import Dict, Tuple, List
 from collections import Counter
-from klass import Klass
-from ancestry import Ancestry
-from background import Background
-from ancestry_feat import AncestryFeat
+from typing import Dict, Tuple, List
+
 from abilities import Abilities
+from ancestry import Ancestry
+from ancestry_feat import AncestryFeat
+from background import Background
+from klass import Klass
 import grant
 
 ABILITIES = "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"
@@ -86,9 +87,13 @@ class Character:
     def hit_points(self):
         return self.get_hit_points(self.level)
 
+    @property
+    def key_ability(self):
+        return self.ability_scores[self.klass.key_ability]
+
     def get_class_dc(self, level):
         # todo: key ability bonus
-        key = 0
+        key = self.key_ability.bonus
         return 10 + level + key
 
     @property
@@ -150,38 +155,6 @@ class Character:
         for lvl in range(level):
             total += sum([grant.value for grant in grants if lvl in grant.levels])
         return total
-
-    @property
-    def hit_points(self):
-        return self.get_hit_points(self.level)
-
-    def get_class_dc(self, level):
-        # todo: key ability bonus
-        key = 0
-        return 10 + level + key
-
-    @property
-    def class_dc_by_level(self):
-        return [self.get_class_dc(level) for level in range(MAX_LEVEL)]
-
-    @property
-    def class_dc(self):
-        return self.get_class_dc(self.level)
-
-    @property
-    def item_boosts(self):
-        for item in self.items:
-            if item.potent:
-                return item.boosts
-        return []
-
-    @property
-    def boosts(self):
-        return self.grants_by_target("ability")
-
-    @property
-    def special(self):
-        return self.grants_by_target("special")
 
     @property
     def senses(self):
