@@ -1,4 +1,6 @@
-from grant import Grant, Boost, Sense, Hit_points
+import random
+
+from grant import Grant, Boost, Sense, HitPoints
 
 
 class Klass:
@@ -24,6 +26,19 @@ class Klass:
             self.advancement = klass.advancement
             self.spell_progression = klass.spell_progression
 
+        self._key_ability = None
+
+    @property
+    def key_ability(self):
+        return self._key_ability
+
+    @key_ability.setter
+    def key_ability(self, value):
+        if len(value) == 2:
+            self._key_ability = random.choice(value)
+        else:
+            self._key_ability = value[0]
+
     def __repr__(self):
         return f"{self.__class__.__name__}({self.name})"
 
@@ -32,6 +47,8 @@ class Klass:
 
     def __call__(self, parent):
         # todo: clear out old klass data
+        keep = [g for g in parent.grants if g.source is not self.name]
+        parent.grants = keep
         parent.grants.extend(self.get_grants())
 
     def get_grants(self):
@@ -39,7 +56,7 @@ class Klass:
         source = f"{self}"
         level = 1
         # hit points
-        grants.append(Hit_points(source, level, "hit_points", self.hit_points, range(1,21)))
+        grants.append(HitPoints(source, level, "hit_points", self.hit_points, range(1, 21)))
         # proficiencies
         for key, value in self.proficiencies.items():
             grants.append(Grant(source, level, "skills", value))
@@ -55,4 +72,6 @@ class Klass:
         # spell_progression
         for value in self.spell_progression:
             grants.append(Grant(source, level, "spell_progression", value))
+        # ability boost
+        grants.append(Boost(source, level, "ability", self.key_ability, amount=1))
         return grants

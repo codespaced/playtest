@@ -1,15 +1,18 @@
 import random
-from character import Character
-from alignment import alignment
-from abilities import Abilities
-import grant
+
 import data
+import grant
+from abilities import Abilities
+from alignment import alignment
+from character import Character
 
 c = Character(name="Bob")
 c.ancestry = random.choice(data.ancestries)
 c.background = random.choice(data.backgrounds)
 c.klass = random.choice(data.classes)
-c.level=2
+c.klass.key_ability = c.klass.key_ability_score
+c.klass(c)
+c.level = 2
 print(c)
 print("ancestry:", c.ancestry)
 if c.special:
@@ -41,6 +44,7 @@ if c.ancestry.bonus_languages and c.ability_scores.intelligence > 14:
 print("languages:", c.languages)
 print("speed:", c.speed)
 print("level:", c.level)
+print("key ability:", c.key_ability)
 print("class dc:", c.class_dc)
 # hero points
 print("hp:", c.hit_points)
