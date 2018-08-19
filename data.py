@@ -2,7 +2,7 @@ import json
 from klass import Klass
 from ancestry import Ancestry
 from background import Background
-from ancestry_feat import Ancestry_feat
+from ancestry_feat import AncestryFeat
 
 
 def load_json(file_name, klass):
@@ -16,5 +16,5 @@ def load_json(file_name, klass):
 
 ancestries = load_json("data/ancestries.json", Ancestry)
 backgrounds = load_json("data/backgrounds.json", Background)
-ancestry_feats = load_json("data/ancestry_feats.json", Ancestry_feat)
+ancestry_feats = load_json("data/ancestry_feats.json", AncestryFeat)
 classes = load_json("data/classes.json", Klass)
