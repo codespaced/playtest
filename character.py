@@ -92,9 +92,7 @@ class Character:
         return self.ability_scores[self.klass.key_ability]
 
     def get_class_dc(self, level):
-        # todo: key ability bonus
-        key = self.key_ability.bonus
-        return 10 + level + key
+        return 10 + level + self.key_ability.bonus
 
     @property
     def hit_points_by_level(self):
@@ -149,7 +147,6 @@ class Character:
 
     def get_hit_points(self, level):
         grants = self.grants_by_target("hit_points")
-        print(grants)
         con = self.ability_scores.constitution.bonus
         total = con * level
         for lvl in range(level):

@@ -1,8 +1,6 @@
 import random
 
 import data
-import grant
-from abilities import Abilities
 from alignment import alignment
 from character import Character
 
@@ -11,7 +9,7 @@ c.ancestry = random.choice(data.ancestries)
 c.background = random.choice(data.backgrounds)
 c.klass = random.choice(data.classes)
 c.klass.key_ability = c.klass.key_ability_score
-c.klass(c)
+#c.klass(c)
 c.level = 2
 print(c)
 print("ancestry:", c.ancestry)
@@ -53,8 +51,8 @@ print("level:", c.level)
 print("class dc:", c.class_dc)
 print("hp:", c.hit_points)
 
-# senses
-# perception
+print("senses:", c.senses)
+print("perception:", c.perception)
 # wisdom
 # teml
 # saves
